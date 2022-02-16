@@ -10,11 +10,27 @@ img{
     position: absolute;
 }
 
-.title{
+.titleContainer{
     position: absolute;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.title{
+    
     color: #D2D3D5;
     font-family: 'Montserrat';
     font-size: 8rem;
+    margin: 0rem;
     margin-left: 3rem;
-    margin-top: 25%;
+
+}
+
+.hello{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    
 }
