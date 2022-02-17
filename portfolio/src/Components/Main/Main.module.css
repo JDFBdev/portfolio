@@ -1,13 +1,27 @@
-.container{
+.wrapper{
     position: relative;
     width: 100vw;
     height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
 }
 
-img{
-    width: 100vw;
-    height: 100vh;
+.container{
+    position: relative;
+    display: flex;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.img{
+    width: 101%;
+    height: 100%;
     position: absolute;
+    object-fit: cover;
+    z-index: -1;
+    transform: translateZ(-10px) scale(2);
 }
 
 .titleContainer{
@@ -19,10 +33,11 @@ img{
 }
 
 .title{
-    
+    display: flex;
+    flex-direction: column;
     color: #D2D3D5;
     font-family: 'Montserrat';
-    font-size: 8rem;
+    font-size: 9rem;
     margin: 0rem;
     margin-left: 3rem;
 
