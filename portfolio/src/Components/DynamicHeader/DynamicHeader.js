@@ -1,22 +1,41 @@
 import React, {useState, useEffect} from "react";
 import s from './DynamicHeader.module.css';
-import Typical from 'react-typical';
+import Typewriter from "typewriter-effect";
 
 export default function DynamicHeader(){
 
+
     return (
         <div className={s.container}>
-            <Typical
-            loop={Infinity}
-            wrapper='b'
-            steps={[
-                'Juan Diego', 5000,
-                'a web developer', 4000,
-                'available for you', 4000,
-                'passionate for design', 4000,
-                'hungry for knowledge', 4000,
-                'gonna make it.', 4000
-            ]}
+            <Typewriter
+                  options={{
+                    autoStart: true,
+                    loop: true,
+                    delay: 65,
+                  }}
+                onInit={(typewriter) => {
+                    typewriter
+                        .typeString('Juan Diego')
+                        .pauseFor(4000)
+                        .deleteAll()
+                        .typeString('a web developer')
+                        .pauseFor(4000)
+                        .deleteAll()
+                        .typeString('available for you')
+                        .pauseFor(4000)
+                        .deleteAll()
+                        .typeString('passionate for design')
+                        .pauseFor(4000)
+                        .deleteAll()
+                        .typeString('hungry for knowledge')
+                        .pauseFor(4000)
+                        .deleteAll()
+                        .typeString('gonna make it.')
+                        .pauseFor(4000)
+                        .deleteAll()
+                        .start()
+                        
+                }}
             />
         </div>
     )

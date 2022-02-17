@@ -3,6 +3,7 @@
     width: 100vw;
     background-color: rgb(20, 20, 20);
     position: relative;
+    scroll-snap-align: x mandatory;
 }
 
 .background{
@@ -30,6 +31,7 @@
     width: 40%;
     height: auto;
     border-radius: 1rem;
+    object-fit: cover;
 }
 
 .data{
