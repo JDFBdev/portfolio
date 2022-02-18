@@ -24,29 +24,28 @@ export default function Main(){
 
     return(
         <div>
-            <NavBar visibleMain={visible} visibleWork={visible2} />
-            <div className={s.wrapper}>
-                
-                    <div className={s.container}>
-                        <img className={s.img} src={neon}/>
-                        <div  className={s.titleContainer}>
-                            <h1 className={s.title}>
-                                <div className={s.hello} >
-                                    Hello<Dot/>
-                                </div>
-                                    I am
-                                <div>
-                                    <VisibilitySensor onChange={onChange}>
-                                        <DynamicHeader/>
-                                    </VisibilitySensor>
-                                </div>
-                            </h1>
-                        </div>
+            <NavBar visibleMain={visible} visibleWork={visible2}/>
+            <div className={s.wrapper} id='main'  >
+                <div className={s.container}>
+                    <img className={s.img} src={neon} />
+                    <div  className={s.titleContainer}>
+                        <h1 className={s.title}>
+                            <div className={s.hello} >
+                                Hello<Dot/>
+                            </div>
+                                I am
+                            <div>
+                                <VisibilitySensor onChange={onChange}>
+                                    <DynamicHeader/>
+                                </VisibilitySensor>
+                            </div>
+                        </h1>
                     </div>
+                </div>
+                <About/>
                 <VisibilitySensor onChange={onChange2}>
-                    <About/>
+                    <Work/>
                 </VisibilitySensor>
-                <Work/>
             </div>
         </div>
     )

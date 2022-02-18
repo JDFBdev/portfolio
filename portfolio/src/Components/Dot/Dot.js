@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import s from './Dot.module.css';
 
-export default function Dot(){
+export default function Dot({isdiv, isdiv2}){
     const [counter, setCounter] = useState(6);
     const [color,setColor] = useState({r:173, g:0, b: 0})
 
@@ -29,12 +29,27 @@ export default function Dot(){
 
     }, [counter]);
 
-    return <p className={s.dot} 
-        style={{
-            color: `rgb(${color.r},${color.g},${color.b})`,
-            transition: "all 4s ease",
-            WebkitTransition: "all 4s ease",
-            MozTransition: "all 4s ease"
-            }} 
-            >.</p>;
+    
+
+    return <>
+        {
+            isdiv ? 
+            <div className={ isdiv2 ? s.dotDiv2 : s.dotDiv} 
+                style={{
+                    backgroundColor: `rgb(${color.r},${color.g},${color.b})`,
+                    transition: "all 4s ease",
+                    WebkitTransition: "all 4s ease",
+                    MozTransition: "all 4s ease"
+                    }} 
+                /> : 
+                <p className={s.dot} 
+                    style={{
+                        color: `rgb(${color.r},${color.g},${color.b})`,
+                        transition: "all 4s ease",
+                        WebkitTransition: "all 4s ease",
+                        MozTransition: "all 4s ease"
+                        }} 
+                        >.</p>
+        }
+        </>
 }
