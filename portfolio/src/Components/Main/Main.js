@@ -14,7 +14,7 @@ import Redes from "../Redes/Redes";
 
 export default function Main(){
     const [visible, setVisible] = useState(true);
-    const [visible2, setVisible2] = useState(true);
+    const [visible2, setVisible2] = useState({dot1: false, first: false, second: false, third: false, dot2: false});
     const [Modal, open] = useModal('root', {
         preventScroll: true,
         closeOnOverlayClick: true
@@ -23,11 +23,6 @@ export default function Main(){
     function onChange (isVisible) {
         setVisible(isVisible);
     }
-
-    function onChange2 (isVisible) {
-        setVisible2(isVisible);
-    }
-
 
     return(
         <div>
@@ -50,9 +45,7 @@ export default function Main(){
                     </div>
                 </div>
                 <About/>
-                <VisibilitySensor onChange={onChange2}>
-                    <Work/>
-                </VisibilitySensor>
+                <Work setVisible2={setVisible2} />
             </div>
             <Modal>
             <CSSTransition
