@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
 import s from './Footer.module.css';
-import Linkedin from '../../img/linkedin.png';
-import mail from '../../img/mail.png';
-import git from '../../img/git.png';
-import {IoIosArrowDropupCircle} from 'react-icons/io'
+import Redes from "../Redes/Redes";
 
 export default function Footer(){
 
@@ -37,29 +34,7 @@ export default function Footer(){
 
     return (
         <div className={s.container}>
-            <div className={s.redes}>
-                <div className={s.red} onClick={() => { window.open('https://www.linkedin.com/in/jdfbdev/','_blank')}}>
-                    <img src={Linkedin} className={s.Logo} />
-                    <div className={s.Data}>
-                        <p className={s.title}>Linkedin</p>
-                        <p className={s.link}>linkedin.com/in/jdfbdev</p>
-                    </div>
-                </div>
-                <div className={s.red} onClick={() => { window.open('mailto:JDFBdeveloper@gmail.com?','_blank')}}>
-                    <img src={mail} className={s.Logo} />
-                    <div className={s.Data} >
-                        <p className={s.title}>E-Mail</p>
-                        <p className={s.link}>JDFBdeveloper@gmail.com</p>
-                    </div>
-                </div>
-                <div className={s.red} onClick={() => { window.open('https://github.com/JDFBdev','_blank')}}>
-                    <img src={git} className={s.Logo} />
-                    <div className={s.Data}>
-                        <p className={s.title}>Github</p>
-                        <p className={s.link}>https://github.com/JDFBdev</p>
-                    </div>
-                </div>
-            </div>
+            <Redes/>
             <div className={s.skills}>
                 <h6 className={s.title}>Skills</h6>
                 <p className={s.stack}>JavaScript<br/>
@@ -85,7 +60,7 @@ export default function Footer(){
                     Solid Works<br/>
                 </p>
             </div>
-            <div className={s.btnContainer}>
+            {/* <div className={s.btnContainer}>
                 <a href='#main' >
                 <IoIosArrowDropupCircle size='3rem' color={`rgb(${color.r},${color.g},${color.b})`} 
                     style={{
@@ -95,7 +70,7 @@ export default function Footer(){
                         cursor: 'pointer'
                         }} />
                     </a>
-            </div>
+            </div> */}
         </div>
     )
 }

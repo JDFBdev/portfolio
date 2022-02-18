@@ -3,11 +3,11 @@ import s from './NavBar.module.css';
 import Dot from "../Dot/Dot";
 import DynamicHeader from "../DynamicHeader/DynamicHeader";
 
-export default function NavBar({visibleMain, visibleWork}){
+export default function NavBar({visibleMain, visibleWork, modal}){
 
     const handleContact = function(e){
         e.preventDefault();
-        alert('puto')
+        modal();
     }
 
    //color: visibleWork ? '#D2D3D5' : '#2F2F2F'
