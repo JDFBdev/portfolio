@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import s from './Footer.module.css';
 import Redes from "../Redes/Redes";
+import {IoIosArrowDropupCircle} from 'react-icons/io'
 
 export default function Footer(){
 
@@ -35,6 +36,7 @@ export default function Footer(){
     return (
         <div className={s.container}>
             <Redes/>
+
             <div className={s.skills}>
                 <h6 className={s.title}>Skills</h6>
                 <p className={s.stack}>JavaScript<br/>
@@ -60,7 +62,7 @@ export default function Footer(){
                     Solid Works<br/>
                 </p>
             </div>
-            {/* <div className={s.btnContainer}>
+            <div className={s.btnContainer}>
                 <a href='#main' >
                 <IoIosArrowDropupCircle size='3rem' color={`rgb(${color.r},${color.g},${color.b})`} 
                     style={{
@@ -70,7 +72,7 @@ export default function Footer(){
                         cursor: 'pointer'
                         }} />
                     </a>
-            </div> */}
+            </div>
         </div>
     )
 }

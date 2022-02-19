@@ -7,6 +7,9 @@ import VisibilitySensor from 'react-visibility-sensor';
 import HenryRestaurant from '../../img/HenryRestaurant.jpg';
 import Poke from '../../img/Poke.jpg';
 import Api from '../../img/API.jpg';
+import RestaurantGif from '../../img/RestaurantGif.gif';
+import PokeGif from '../../img/PokeGif.gif';
+import ApiGif from '../../img/ApiGif.gif';
 
 export default function Work({setVisible2}){
     const [visible, setVisible] = useState({first: false, second: false, third: false});
@@ -35,8 +38,6 @@ export default function Work({setVisible2}){
         setVisible2(prev=>({...prev, dot2: isVisible}))
     }
 
-    console.log(visible.first)
-
     return (
         <div className={s.container} id='work'>
 
@@ -54,9 +55,10 @@ export default function Work({setVisible2}){
 
             <img 
                 className={s.restaurantImg}
-                onMouseEnter={()=>setImages(prev=>({...prev, first: Poke}))} 
+                onMouseEnter={()=>setImages(prev=>({...prev, first: RestaurantGif}))} 
                 onMouseLeave={()=>setImages(prev=>({...prev, first: HenryRestaurant}))} 
-                src={images.first} 
+                src={images.first}
+                alt='Henry Restaurant'
                 onClick={() => { window.open('https://www.linkedin.com/feed/update/urn:li:activity:6897664671508152320/','_blank')}}
             />
 
@@ -68,9 +70,10 @@ export default function Work({setVisible2}){
 
             <img 
                 className={s.pokeImg}
-                onMouseEnter={()=>setImages(prev=>({...prev, second: Api}))} 
+                onMouseEnter={()=>setImages(prev=>({...prev, second: PokeGif}))} 
                 onMouseLeave={()=>setImages(prev=>({...prev, second: Poke}))} 
                 src={images.second}
+                alt='Post-Moden Pokedex'
                 onClick={() => { window.open('https://www.linkedin.com/feed/update/urn:li:activity:6879435240272601088/','_blank')}}/>
 
             <VisibilitySensor partialVisibility={true} onChange={onChangeSecond}>
@@ -81,9 +84,10 @@ export default function Work({setVisible2}){
 
             <img
                 className={s.apiImg}
-                onMouseEnter={()=>setImages(prev=>({...prev, third: HenryRestaurant}))}
+                onMouseEnter={()=>setImages(prev=>({...prev, third: ApiGif}))}
                 onMouseLeave={()=>setImages(prev=>({...prev, third: Api}))}
-                src={images.third} 
+                src={images.third}
+                alt='Recipe Api'
                 onClick={() => { window.open('https://www.linkedin.com/feed/update/urn:li:activity:6878684525543604224/','_blank')}}/>
 
             <VisibilitySensor partialVisibility={true} onChange={onChangeThird}>

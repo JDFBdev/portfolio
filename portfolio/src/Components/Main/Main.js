@@ -28,8 +28,8 @@ export default function Main(){
         <div>
             <NavBar visibleMain={visible} visibleWork={visible2}  modal={open}/>
             <div className={s.wrapper}   >
-                <div className={s.container}>
-                    <img className={s.img} src={neon} />
+                <div id='main'  className={s.container}>
+                    <img className={s.img} src={neon} alt='Neo Tokyo' />
                     <div  className={s.titleContainer}>
                         <h1 className={s.title}>
                             <div className={s.hello} >
@@ -59,7 +59,7 @@ export default function Main(){
                     <h1 className={s.modalTitle} >Looks like I managed to get your attention...</h1>
                     <div className={s.modalData}>
                         <Redes/>
-                        <img src={omg} className={s.gif}/>
+                        <img src={omg} className={s.gif} alt='omg'/>
                     </div>
                 </div>
             </CSSTransition>
