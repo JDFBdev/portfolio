@@ -1,37 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import s from './Footer.module.css';
 import Redes from "../Redes/Redes";
 import {IoIosArrowDropupCircle} from 'react-icons/io'
 
-export default function Footer(){
-
-    const [counter, setCounter] = useState(6);
-    const [color,setColor] = useState({r:173, g:0, b: 0})
-
-    useEffect(() => {
-        counter > 0 && setTimeout(() => setCounter(counter - 1), 2000);
-        counter === 0 && setCounter(6)
-        if (counter === 6){
-            setColor({r:173, g: 0, b:0})
-        }
-        if (counter === 5){
-            setColor({r:173, g: 173, b:0})
-        }
-        if (counter === 4){
-            setColor({r:0, g: 173, b:0})
-        }
-        if (counter === 3){
-            setColor({r:0, g: 173, b:173})
-        }
-        if (counter === 2){
-            setColor({r:0, g: 0, b:173})
-        }
-        if (counter === 1){
-            setColor({r:173, g: 0, b:173})
-        }
-
-    }, [counter]);
-
+export default function Footer({color}){
 
     return (
         <div className={s.container}>

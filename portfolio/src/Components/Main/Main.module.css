@@ -21,8 +21,8 @@
     height: 100%;
     position: absolute;
     object-fit: cover;
-    z-index: -1;
-    transform: translateZ(-10px) scale(2);
+    z-index: -100;
+    transform: translateZ(-10px) scale(2.1,2);
 }
 
 .titleContainer{
@@ -30,7 +30,7 @@
     height: 95vh;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .title{
@@ -38,10 +38,9 @@
     flex-direction: column;
     color: #D2D3D5;
     font-family: 'Montserrat';
-    font-size: 9rem;
+    font-size: 1000%;
     margin: 0rem;
     margin-left: 3rem;
-
 }
 
 .hello{
@@ -89,4 +88,30 @@
     opacity: 1;
     transform: translate(0px, -10px);
     transition: transform .5s, opacity .4s linear;
+}
+
+@media (max-width: 1750px) {
+    .title{
+        font-size: 7rem;
+    }
+}
+
+@media (max-width: 1400px) {
+    .title{
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .title{
+        font-size: 4rem;
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 460px) {
+    .title{
+        font-size: 3rem;
+    }
 }

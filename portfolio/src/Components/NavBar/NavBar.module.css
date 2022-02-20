@@ -11,7 +11,8 @@
 .btns{
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: space-around;
+    max-width: 800px;
 }
 
 .btn{
@@ -23,6 +24,8 @@
     border: none;
     margin-left: 2rem;
     margin-right: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
     cursor: pointer;
     transition: color .3s;
     text-decoration: none;
@@ -48,4 +51,50 @@
     margin: 0;
     display: flex;
     flex-direction: row;
+}
+
+@media (max-width: 1200px) {
+    .container{
+        flex-direction: column;
+    }
+    .title{
+        align-self: center;
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    .btns{
+        align-self: center;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .container{
+        justify-content: center !important;
+    }
+}
+
+@media (max-width: 585px) {
+    .title{
+        font-size: 1.5rem;
+    }
+
+    .btn{
+        font-size: 1.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .btn{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 410px) {
+    .title{
+        font-size: 1.2rem;
+    }
 }

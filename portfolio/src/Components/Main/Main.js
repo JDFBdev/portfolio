@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import neon from '../../img/neon.jpg';
 import s from './Main.module.css';
 import Dot from '../Dot/Dot'
@@ -15,6 +15,8 @@ import Redes from "../Redes/Redes";
 export default function Main(){
     const [visible, setVisible] = useState(true);
     const [visible2, setVisible2] = useState({dot1: false, first: false, second: false, third: false, dot2: false});
+    const [counter, setCounter] = useState(6);
+    const [color,setColor] = useState({r:173, g:0, b: 0})
     const [Modal, open] = useModal('root', {
         preventScroll: true,
         closeOnOverlayClick: true
@@ -24,20 +26,44 @@ export default function Main(){
         setVisible(isVisible);
     }
 
+    useEffect(() => {
+        counter > 0 && setTimeout(() => setCounter(counter - 1), 2000);
+        counter === 0 && setCounter(6)
+        if (counter === 6){
+            setColor({r:173, g: 0, b:0})
+        }
+        if (counter === 5){
+            setColor({r:173, g: 173, b:0})
+        }
+        if (counter === 4){
+            setColor({r:0, g: 173, b:0})
+        }
+        if (counter === 3){
+            setColor({r:0, g: 173, b:173})
+        }
+        if (counter === 2){
+            setColor({r:0, g: 0, b:173})
+        }
+        if (counter === 1){
+            setColor({r:173, g: 0, b:173})
+        }
+
+    }, [counter]);
+
     return(
         <div>
-            <NavBar visibleMain={visible} visibleWork={visible2}  modal={open}/>
+            <NavBar visibleMain={visible} visibleWork={visible2}  modal={open} color={color}/>
             <div className={s.wrapper}   >
                 <div id='main'  className={s.container}>
                     <img className={s.img} src={neon} alt='Neo Tokyo' />
-                    <div  className={s.titleContainer}>
+                    <div className={s.titleContainer}>
                         <h1 className={s.title}>
                             <div className={s.hello} >
-                                Hello<Dot/>
+                                Hello<Dot color={color} />
                             </div>
                                 I am
                             <div>
-                                <VisibilitySensor onChange={onChange}>
+                                <VisibilitySensor partialVisibility={true} onChange={onChange}>
                                     <DynamicHeader/>
                                 </VisibilitySensor>
                             </div>
@@ -45,7 +71,7 @@ export default function Main(){
                     </div>
                 </div>
                 <About/>
-                <Work setVisible2={setVisible2} />
+                <Work setVisible2={setVisible2} color={color} />
             </div>
             <Modal>
             <CSSTransition
