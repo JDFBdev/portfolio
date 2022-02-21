@@ -134,7 +134,7 @@
 .pokeTitle2,
 .apiTitle2{
     font-family: 'Montserrat';
-    font-size: 1.8rem;
+    font-size: 3vmin;
     margin: 1rem;
     color: #2F2F2F;
     transition-property: opacity;
