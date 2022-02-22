@@ -47,7 +47,6 @@ export default function Main(){
         if (counter === 1){
             setColor({r:173, g: 0, b:173})
         }
-
     }, [counter]);
 
     return(

@@ -1,6 +1,7 @@
 .redes{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .red{
@@ -42,18 +43,34 @@
     margin: 0rem;
 }
 
+
 @media (min-width: 2000px) {
     .link{
-        font-size: 1.5rem;
-    }
-
-    .title{
         font-size: 2rem;
     }
 
+    .title{
+        font-size: 2.4rem;
+    }
+
     .Logo{
-        width: 4rem;
-        height: 4rem;
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+@media (max-width: 1300px) {
+    .link{
+        font-size: 1rem;
+    }
+
+    .title{
+        font-size: 1.3rem;
+    }
+
+    .Logo{
+        width: 2.5rem;
+        height: 2.5rem;
     }
 }
 

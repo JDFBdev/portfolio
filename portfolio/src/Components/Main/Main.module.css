@@ -38,9 +38,9 @@
     flex-direction: column;
     color: #D2D3D5;
     font-family: 'Montserrat';
-    font-size: 1000%;
     margin: 0rem;
     margin-left: 3rem;
+    font-size: 8rem;
 }
 
 .hello{
@@ -51,12 +51,14 @@
 }
 
 .modalContainer{
-    width: 40vw;
+    width: 45vmax;
     height: fit-content;
     background-color: rgba(0, 0, 0, 0.849);
     border-radius: 1rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     
 }
 
@@ -75,7 +77,10 @@
 
 .gif{
     margin-top: 1rem;
-    width: 35%;
+    width: 40%;
+    height: auto;
+    border-radius: 5%;
+    object-fit: cover;
 }
 
 
@@ -91,6 +96,12 @@
     transition: transform .5s, opacity .4s linear;
 }
 
+@media (min-width: 1800px) {
+    .modalTitle{
+        font-size: 3rem;
+    }
+}
+
 @media (max-width: 1750px) {
     .title{
         font-size: 7rem;
@@ -103,11 +114,40 @@
     }
 }
 
+@media (max-width: 1150px) {
+    .modalContainer{
+        width: 55vw;
+    }
+}
+
 @media (max-width: 1000px) {
     .title{
         font-size: 4rem;
         margin-left: 1rem;
         margin-bottom: 2rem;
+    }
+
+    .modalContainer{
+        width: 65vw;
+    }
+}
+
+@media (max-width: 700px) {
+    .modalContainer{
+        width: 60vw;
+    }
+
+    .modalTitle{
+        font-size:1.5rem ;
+    }
+
+    .gif{
+        width: 60%;
+    }
+    .modalData{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
