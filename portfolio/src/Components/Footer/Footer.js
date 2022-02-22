@@ -28,7 +28,7 @@ export default function Footer({color}){
                     GraphQL<br/>
                     Apollo<br/>
                     Restful API's<br/>
-                    EF SET C2 Proficienct<br/>
+                    EF SET C2 Proficiency<br/>
                     Electronics<br/>
                     CorelDraw<br/>
                     Solid Works<br/>
@@ -36,7 +36,7 @@ export default function Footer({color}){
             </div>
             <div className={s.btnContainer}>
                 <a href='#main' >
-                <IoIosArrowDropupCircle size='3rem' color={`rgb(${color.r},${color.g},${color.b})`} 
+                <IoIosArrowDropupCircle size='3.5rem' color={`rgb(${color.r},${color.g},${color.b})`} 
                     style={{
                         transition: "all 4s ease",
                         WebkitTransition: "all 4s ease",

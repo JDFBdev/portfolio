@@ -57,7 +57,7 @@ export default function Main(){
                 <div id='main'  className={s.container}>
                     <img className={s.img} src={neon} alt='Neo Tokyo' />
                     <div className={s.titleContainer}>
-                        <h1 className={s.title}>
+                        <h1 translate="no" className={s.title}>
                             <div className={s.hello} >
                                 Hello<Dot color={color} />
                             </div>
@@ -72,6 +72,7 @@ export default function Main(){
                 </div>
                 <About/>
                 <Work setVisible2={setVisible2} color={color} />
+                {/* <Footer color={color}/> */}
             </div>
             <Modal>
             <CSSTransition

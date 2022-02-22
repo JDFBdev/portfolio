@@ -41,3 +41,78 @@
     font-size: 1rem;
     margin: 0rem;
 }
+
+@media (min-width: 2000px) {
+    .link{
+        font-size: 1.5rem;
+    }
+
+    .title{
+        font-size: 2rem;
+    }
+
+    .Logo{
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .link{
+        font-size: 1rem;
+    }
+
+    .title{
+        font-size: 1.3rem;
+    }
+
+    .Logo{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .link{
+        font-size: .8rem;
+    }
+
+    .title{
+        font-size: 1.2rem;
+    }
+
+    .Logo{
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .link{
+        font-size: .6rem;
+    }
+
+    .title{
+        font-size: 1rem;
+    }
+
+    .Logo{
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+}
+
+@media (max-width: 470px) {
+    .link{
+        font-size: .5rem;
+    }
+
+    .title{
+        font-size: .9rem;
+    }
+
+    .Logo{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}

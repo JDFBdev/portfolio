@@ -40,13 +40,20 @@
 .line{
     position: absolute;
     width: .1rem;
-    height: 215vh;
+    height: 150rem;
     background-color: #c0c0c0;
     margin-top: 89vh;
     left: 0; 
     right: 0; 
     margin-left: auto; 
     margin-right: auto; 
+}
+.dot{
+    margin-top: 89vh;
+}
+
+.dot2{
+    margin-top: calc(89vh + 150rem);
 }
 
 .restaurantImg,
@@ -64,17 +71,17 @@
 }
 
 .restaurantImg{
-    margin-top: 120vh;
-}
-
-.apiImg{
-    margin-top: 228vh;
+    margin-top: calc(320vh/2.66);
 }
 
 .pokeImg{
     width: 42.4%;
-    margin-top: 175vh;
+    margin-top: calc((320vh/2.66) + 40rem);
     margin-left: 59.7%;
+}
+
+.apiImg{
+    margin-top: calc((320vh/2.66) + 80rem);
 }
 
 .restaurantImg:hover,
@@ -101,18 +108,18 @@
 }
 
 .restaurantTitleContainer{
-    margin-top: 140vh;
+    margin-top: calc((320vh/2.66) + 15rem);
     left: 8rem; 
 }
 
 .pokeTitleContainer{
-    margin-top: 198vh;
+    margin-top: calc((320vh/2.66) + 55rem);
     
     left: -10rem; 
 }
 
 .apiTitleContainer{
-    margin-top: 251vh;
+    margin-top: calc((320vh/2.66) + 95rem);
     left: 8rem;
 }
 
@@ -151,6 +158,10 @@
 
 .pokeTitle2{
     text-align: end;
+}
+
+.footer{
+    margin-top: calc(89vh + 150rem + 10rem);
 }
 
 .MyClassEnterActive {
@@ -198,8 +209,293 @@
         font-size: 2.3rem;
     }
 
+
 }
 
-@media (min-width: 2500px) {
+@media (max-width: 700px) {
+    .restaurantTitleContainer,
+    .apiTitleContainer{
+        left: 6rem; 
+    }
 
+    .pokeTitleContainer{
+        left: -8rem; 
+    }
+}
+
+@media (max-width: 700px) {
+    .restaurantTitleContainer,
+    .apiTitleContainer{
+        left: 6rem; 
+    }
+
+    .pokeTitleContainer{
+        left: -8rem; 
+    }
+}
+
+@media (max-width: 1730px) {
+    .pokeImg{
+        margin-top: calc((320vh/2.66) + 35rem);
+    }
+    
+    .apiImg{
+        margin-top: calc((320vh/2.66) + 70rem);
+    }
+
+    .restaurantTitleContainer{
+        margin-top: calc((320vh/2.66) + 10rem);
+    }
+    
+    .pokeTitleContainer{
+        margin-top: calc((320vh/2.66) + 50rem);
+    }
+    
+    .apiTitleContainer{
+        margin-top: calc((320vh/2.66) + 85rem);
+    }
+
+    .line{
+        height: 130rem;
+    }
+
+    .footer{
+        margin-top: calc(89vh + 130rem + 10rem);
+    }
+
+    .dot2{
+        margin-top: calc(89vh + 130rem);
+    }
+
+}
+
+@media (min-height: 1450px) {
+
+    .line{
+        height: 160rem;
+    }
+
+    .footer{
+        margin-top: calc(89vh + 160rem + 10rem);
+    }
+
+    .dot2{
+        margin-top: calc(89vh + 160rem);
+    }
+}
+
+@media (max-width: 1450px) {
+    .pokeImg{
+        margin-top: calc((320vh/2.66) + 30rem);
+    }
+    
+    .apiImg{
+        margin-top: calc((320vh/2.66) + 60rem);
+    }
+
+    .restaurantTitleContainer{
+        margin-top: calc((320vh/2.66) + 10rem);
+    }
+    
+    .pokeTitleContainer{
+        margin-top: calc((320vh/2.66) + 40rem);
+    }
+    
+    .apiTitleContainer{
+        margin-top: calc((320vh/2.66) + 70rem);
+    }
+
+    .line{
+        height: 125rem;
+    }
+
+    .footer{
+        margin-top: calc(89vh + 125rem + 10rem);
+    }
+
+    .dot2{
+        margin-top: calc(89vh + 1250rem);
+    }
+}
+
+@media (max-width: 1200px) {
+    .pokeImg{
+        margin-top: calc((320vh/2.66) + 25rem);
+    }
+    
+    .apiImg{
+        margin-top: calc((320vh/2.66) + 50rem);
+    }
+
+    .restaurantTitleContainer{
+        margin-top: calc((320vh/2.66) + 10rem);
+    }
+    
+    .pokeTitleContainer{
+        margin-top: calc((320vh/2.66) + 33rem);
+    }
+    
+    .apiTitleContainer{
+        margin-top: calc((320vh/2.66) + 60rem);
+    }
+
+    .line{
+        height: 110rem;
+    }
+
+    .footer{
+        margin-top: calc(89vh + 110rem + 10rem);
+    }
+
+    .dot2{
+        margin-top: calc(89vh + 110rem);
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .restaurantImg{
+        transform: translateZ(-1px) scale(1.2);
+    }
+
+    .pokeImg{
+        margin-top: calc((320vh/2.66) + 20rem);
+        transform: translateZ(-1px) scale(1.2);
+    }
+    
+    .apiImg{
+        margin-top: calc((320vh/2.66) + 40rem);
+        transform: translateZ(-1px) scale(1.2);
+    }
+
+    .restaurantTitleContainer{
+        margin-top: calc((320vh/2.66) + 5rem);
+    }
+    
+    .pokeTitleContainer{
+        margin-top: calc((320vh/2.66) + 27rem);
+    }
+    
+    .apiTitleContainer{
+        margin-top: calc((320vh/2.66) + 47rem);
+    }
+
+    .line{
+        height: 95rem;
+    }
+
+    .footer{
+        margin-top: calc(89vh + 95rem + 10rem);
+    }
+
+    .dot2{
+        margin-top: calc(89vh + 95rem);
+    }
+}
+
+@media (max-width: 800px) {
+
+    .pokeImg{
+        margin-top: calc((320vh/2.66) + 15rem);
+    }
+    
+    .apiImg{
+        margin-top: calc((320vh/2.66) + 30rem);
+    }
+
+    .restaurantTitleContainer{
+        margin-top: calc((320vh/2.66) + 5rem);
+    }
+    
+    .pokeTitleContainer{
+        margin-top: calc((320vh/2.66) + 20rem);
+    }
+    
+    .apiTitleContainer{
+        margin-top: calc((320vh/2.66) + 34rem);
+    }
+
+    .line{
+        height: 80rem;
+    }
+
+    .footer{
+        margin-top: calc(89vh + 75rem + 10rem);
+    }
+
+    .dot2{
+        margin-top: calc(89vh + 80rem);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .pokeImg{
+        margin-top: calc((320vh/2.66) + 13rem);
+    }
+    
+    .apiImg{
+        margin-top: calc((320vh/2.66) + 25rem);
+    }
+
+    .restaurantTitleContainer{
+        margin-top: calc((320vh/2.66) + 0rem);
+    }
+    
+    .pokeTitleContainer{
+        margin-top: calc((320vh/2.66) + 14rem);
+    }
+    
+    .apiTitleContainer{
+        margin-top: calc((320vh/2.66) + 27rem);
+    }
+
+    .line{
+        height: 65rem;
+    }
+
+    .footer{
+        margin-top: calc(89vh + 65rem + 7rem);
+    }
+
+    .dot2{
+        margin-top: calc(89vh + 65rem);
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .pokeImg{
+        margin-top: calc((320vh/2.66) + 11rem);
+    }
+    
+    .apiImg{
+        margin-top: calc((320vh/2.66) + 21rem);
+    }
+
+    .restaurantTitleContainer{
+        margin-top: calc((320vh/2.66) + 1rem);
+    }
+    
+    .pokeTitleContainer{
+        margin-top: calc((320vh/2.66) + 12rem);
+    }
+    
+    .apiTitleContainer{
+        margin-top: calc((320vh/2.66) + 23rem);
+    }
+
+    .line{
+        height: 58rem;
+    }
+
+    .footer{
+        margin-top: calc(89vh + 58rem + 5rem);
+    }
+
+    .dot2{
+        margin-top: calc(89vh + 58rem);
+    }
 }

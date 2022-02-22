@@ -6,7 +6,7 @@ export default function DynamicHeader(){
 
 
     return (
-        <div className={s.container}>
+        <div translate="no" className={s.container}>
             <Typewriter
                   options={{
                     autoStart: true,

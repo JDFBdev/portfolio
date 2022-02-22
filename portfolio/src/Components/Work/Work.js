@@ -41,12 +41,16 @@ export default function Work({setVisible2, color}){
             <img src={coso} className={s.img} />
             <h1 className={s.title} >Lastest<br/>Projects</h1>
             <VisibilitySensor onChange={onChangeDot1}>
+                <div className={s.dot} >
                 <Dot isdiv={true} color={color}/>
+                </div>
             </VisibilitySensor>
             <div className={s.line}/>
 
             <VisibilitySensor onChange={onChangeDot2}>
-                <Dot isdiv={true} isdiv2={true} color={color}/>
+                <div className={s.dot2}>
+                    <Dot isdiv={true} isdiv2={true} color={color}/>
+                </div>
             </VisibilitySensor>
 
 
@@ -61,7 +65,7 @@ export default function Work({setVisible2, color}){
 
             <VisibilitySensor partialVisibility={true} onChange={onChangeFirst}>
                 <div className={s.restaurantTitleContainer} style={{transform: visible.first ? 'scale(1)' : 'scale(1,.1)'}}>
-                    <h4 className={ visible.first ? s.restaurantTitle2 : s.restaurantTitle1} style={{opacity: visible.first ? '1' : '0'}} >Henry<br/>Restaurant</h4>
+                    <h4 translate="no" className={ visible.first ? s.restaurantTitle2 : s.restaurantTitle1} style={{opacity: visible.first ? '1' : '0'}} >Henry<br/>Restaurant</h4>
                 </div>
             </VisibilitySensor>
 
@@ -75,7 +79,7 @@ export default function Work({setVisible2, color}){
 
             <VisibilitySensor partialVisibility={true} onChange={onChangeSecond}>
                 <div className={s.pokeTitleContainer} style={{transform: visible.second ? 'scale(1)' : 'scale(1,.1)'}} >
-                    <h4 className={ visible.second ? s.pokeTitle2 : s.pokeTitle1} style={{opacity: visible.second ? '1' : '0'}} >Post-Modern<br/>Pokedex</h4>
+                    <h4 translate="no" className={ visible.second ? s.pokeTitle2 : s.pokeTitle1} style={{opacity: visible.second ? '1' : '0'}} >Post-Modern<br/>Pokedex</h4>
                 </div>
             </VisibilitySensor>
 
@@ -89,11 +93,12 @@ export default function Work({setVisible2, color}){
 
             <VisibilitySensor partialVisibility={true} onChange={onChangeThird}>
                 <div className={s.apiTitleContainer} style={{transform: visible.third ? 'scale(1)' : 'scale(1,.1)'}}>
-                    <h4 className={ visible.third ? s.apiTitle2 : s.apiTitle1} style={{opacity: visible.third ? '1' : '0'}} >Recipe<br/>Api Project</h4>
+                    <h4 translate="no" className={ visible.third ? s.apiTitle2 : s.apiTitle1} style={{opacity: visible.third ? '1' : '0'}} >Recipe<br/>Api Project</h4>
                 </div>
             </VisibilitySensor>
-
-            <Footer color={color}/>
+            <div className={s.footer}>
+                <Footer  color={color}/>
+            </div>
         </div>
     )
 }

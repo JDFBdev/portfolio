@@ -73,6 +73,7 @@
 @media (max-width: 1000px) {
     .container{
         justify-content: center !important;
+        
     }
 }
 
