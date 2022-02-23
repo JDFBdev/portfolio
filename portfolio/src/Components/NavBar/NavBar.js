@@ -20,7 +20,7 @@ export default function NavBar({visibleMain, visibleWork, modal, color}){
             </div>
             <div className={s.btns}>
                 <a className={s.btn} href='#about' style={{color: (visibleWork.dot1 || visibleWork.first || visibleWork.second || visibleWork.third || visibleWork.dot2) ? '#2F2F2F' : '#D2D3D5'}}>ABOUT</a>
-                <a className={s.btn} href='#work'  style={{color: (visibleWork.dot1 || visibleWork.first || visibleWork.second || visibleWork.third || visibleWork.dot2) ? '#2F2F2F' : '#D2D3D5'}}>WORK</a>
+                <a className={s.btn} href='#work'  style={{color: (visibleWork.dot1 || visibleWork.first || visibleWork.second || visibleWork.third || visibleWork.dot2) ? '#2F2F2F' : '#D2D3D5'}}>PROJECTS</a>
                 <button className={s.btn} onClick={handleContact} style={{color: (visibleWork.dot1 || visibleWork.first || visibleWork.second || visibleWork.third || visibleWork.dot2) ? '#2F2F2F' : '#D2D3D5'}}>CONTACT</button>
             </div>
         </div>

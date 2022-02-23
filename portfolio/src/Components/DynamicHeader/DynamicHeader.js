@@ -21,7 +21,7 @@ export default function DynamicHeader(){
                         .typeString('a web developer')
                         .pauseFor(2500)
                         .deleteAll()
-                        .typeString('available for you')
+                        .typeString('looking for new challenges')
                         .pauseFor(2500)
                         .deleteAll()
                         .typeString('passionate for design')
