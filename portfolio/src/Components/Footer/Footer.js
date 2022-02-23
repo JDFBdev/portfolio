@@ -28,7 +28,7 @@ export default function Footer({color}){
                     GraphQL<br/>
                     Apollo<br/>
                     Restful API's<br/>
-                    EF SET C2 Proficiency<br/>
+                    EF SET C2<br/>
                     Electronics<br/>
                     CorelDraw<br/>
                     Solid Works<br/>
