@@ -43,20 +43,17 @@ export default function Work({setVisible2, color}){
 
             <img src={coso} className={s.img} alt='coso' />
             <h1 className={s.title} >Lastest<br/>Projects</h1>
-            <VisibilitySensor onChange={onChangeDot1}>
-                <div className={s.dot} >
-                <Dot isdiv={true} color={color}/>
-                </div>
-            </VisibilitySensor>
+            <div className={s.dot} >
+                <VisibilitySensor onChange={onChangeDot1}>
+                    <Dot isdiv={true} color={color}/>
+                </VisibilitySensor>
+            </div>
             <div className={s.line}/>
-
-            <VisibilitySensor onChange={onChangeDot2}>
-                <div className={s.dot2}>
+            <div className={s.dot2}>
+                <VisibilitySensor onChange={onChangeDot2}>
                     <Dot isdiv={true} isdiv2={true} color={color}/>
-                </div>
-            </VisibilitySensor>
-
-
+                </VisibilitySensor>
+            </div>
             <img 
                 className={s.restaurantImg}
                 onMouseEnter={()=>setImages(prev=>({...prev, first: HenryRestaurantGif}))} 
