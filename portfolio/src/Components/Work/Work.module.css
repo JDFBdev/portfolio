@@ -68,6 +68,7 @@
     cursor: pointer;
     transition: transform .5s, filter .5s;
     z-index: 1;
+    border-radius: .5rem;
 }
 
 .restaurantImg{
