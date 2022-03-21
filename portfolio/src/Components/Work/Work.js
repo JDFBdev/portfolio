@@ -10,9 +10,10 @@ import Api from '../../img/API.jpg';
 import HenryRestaurantGif from '../../img/RestaurantGif.gif';
 import PokeGif from '../../img/PokeGif.gif';
 import ApiGif from '../../img/ApiGif.gif';
+import Movies from '../../img/Movies.jpg';
 
 export default function Work({setVisible2, color}){
-    const [visible, setVisible] = useState({first: false, second: false, third: false});
+    const [visible, setVisible] = useState({first: false, second: false, third: false, fourth: false});
     const [images, setImages] = useState({first: HenryRestaurant, second: Poke, third: Api});
 
     function onChangeFirst (isVisible) {
@@ -27,7 +28,12 @@ export default function Work({setVisible2, color}){
 
     function onChangeThird (isVisible) {
         setVisible((prev)=>({...prev, third: isVisible}));
-        setVisible2(prev=>({...prev, first: isVisible}))
+        setVisible2(prev=>({...prev, third: isVisible}))
+    }
+
+    function onChangeFourth (isVisible) {
+        setVisible((prev)=>({...prev, fourth: isVisible}));
+        setVisible2(prev=>({...prev, fourth: isVisible}))
     }
 
     function onChangeDot1 (isVisible){
@@ -94,6 +100,18 @@ export default function Work({setVisible2, color}){
             <VisibilitySensor partialVisibility={true} onChange={onChangeThird}>
                 <div className={s.apiTitleContainer} style={{transform: visible.third ? 'scale(1)' : 'scale(1,.1)'}}>
                     <h4 translate="no" className={ visible.third ? s.apiTitle2 : s.apiTitle1} style={{opacity: visible.third ? '1' : '0'}} >Recipe<br/>Api Project</h4>
+                </div>
+            </VisibilitySensor>
+
+            <img
+                className={s.movieImg}
+                src={Movies}
+                alt='Moives Api'
+                onClick={() => { window.open('https://ivealreadyseenit.vercel.app/','_blank')}}/>
+
+            <VisibilitySensor partialVisibility={true} onChange={onChangeFourth}>
+                <div className={s.movieTitleContainer} style={{transform: visible.fourth ? 'scale(1)' : 'scale(1,.1)'}}>
+                    <h4 translate="no" className={ visible.fourth ? s.movieTitle2 : s.movieTitle1} style={{opacity: visible.fourth ? '1' : '0'}} >I've Already<br/>Seen It</h4>
                 </div>
             </VisibilitySensor>
             <div className={s.footer}>

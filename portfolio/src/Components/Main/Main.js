@@ -13,8 +13,8 @@ import omg from '../../img/omg.gif';
 import Redes from "../Redes/Redes";
 
 export default function Main(){
-    const [visible, setVisible] = useState(true);
-    const [visible2, setVisible2] = useState({dot1: false, first: false, second: false, third: false, dot2: false});
+    const [visible, setVisible] = useState(true); // Let the navbar know if it has to display dynamic header
+    const [visible2, setVisible2] = useState({dot1: false, first: false, second: false, third: false, fourth: false , dot2: false}); // Let the navbar know if it has to be dark text
     const [counter, setCounter] = useState(6);
     const [color,setColor] = useState({r:173, g:0, b: 0})
     const [Modal, open] = useModal('root', {

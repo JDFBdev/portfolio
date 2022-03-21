@@ -40,7 +40,7 @@
 .line{
     position: absolute;
     width: .1rem;
-    height: 150rem;
+    height: 180rem;
     background-color: #c0c0c0;
     margin-top: 89vh;
     left: 0; 
@@ -53,12 +53,13 @@
 }
 
 .dot2{
-    margin-top: calc(89vh + 150rem);
+    margin-top: calc(89vh + 180rem);
 }
 
 .restaurantImg,
 .pokeImg,
-.apiImg{
+.apiImg,
+.movieImg{
     position: absolute;
     width: 43%;
     max-width: 900px;
@@ -85,9 +86,16 @@
     margin-top: calc((320vh/2.66) + 80rem);
 }
 
+.movieImg{
+    width: 42.4%;
+    margin-top: calc((320vh/2.66) + 120rem);
+    margin-left: 59.7%;
+}
+
 .restaurantImg:hover,
 .pokeImg:hover,
-.apiImg:hover{
+.apiImg:hover,
+.movieImg:hover{
     transform: translateZ(-2px) scale(1.3) translateY(-.5rem);
     filter: brightness(105%);
     transition: transform .5s, filter .5s;
@@ -95,7 +103,8 @@
 
 .restaurantTitleContainer,
 .pokeTitleContainer,
-.apiTitleContainer{
+.apiTitleContainer,
+.movieTitleContainer{
     border: none;
     width: fit-content;
     height: fit-content;
@@ -115,7 +124,6 @@
 
 .pokeTitleContainer{
     margin-top: calc((320vh/2.66) + 55rem);
-    
     left: -10rem; 
 }
 
@@ -124,11 +132,17 @@
     left: 8rem;
 }
 
+.movieTitleContainer{
+    margin-top: calc((320vh/2.66) + 135rem);
+    left: -8rem; 
+}
+
 
 
 .restaurantTitle1,
 .pokeTitle1,
-.apiTitle1{
+.apiTitle1,
+.movieTitle1{
     font-family: 'Montserrat';
     font-size: 1.8rem;
     margin-top: 1rem;
@@ -138,13 +152,15 @@
     color: #2F2F2F;
 }
 
-.pokeTitle1{
+.pokeTitle1,
+.movieTitle1{
     text-align: end;
 }
 
 .restaurantTitle2,
 .pokeTitle2,
-.apiTitle2{
+.apiTitle2,
+.movieTitle2{
     font-family: 'Montserrat';
     font-size: 1.8rem;
     margin-top: 1rem;
@@ -157,12 +173,13 @@
     transition-delay: .8s;
 }
 
-.pokeTitle2{
+.pokeTitle2,
+.movieTitle2{
     text-align: end;
 }
 
 .footer{
-    margin-top: calc(89vh + 150rem + 10rem);
+    margin-top: calc(89vh + 180rem + 15rem);
 }
 
 .MyClassEnterActive {
@@ -180,7 +197,8 @@
 @media (max-width: 950px) {
     .restaurantTitle2,
     .pokeTitle2,
-    .apiTitle2{
+    .apiTitle2,
+    .movieTitle2{
         font-size: 1.3rem;
     }
 
@@ -189,7 +207,8 @@
         left: 5rem; 
     }
 
-    .pokeTitleContainer{
+    .pokeTitleContainer,
+    .movieTitleContainer{
         left: -8rem; 
     }
 }
@@ -201,15 +220,25 @@
         margin-left: calc((100vw/2) - 10rem - 950px);
     }
 
-    .pokeImg{
+    .pokeImg,
+    .movieImg{
         margin-left: calc((100vw/2) + 13.5rem );
     }
     .restaurantTitle2,
     .pokeTitle2,
-    .apiTitle2{
+    .apiTitle2,
+    .movieTitle2{
         font-size: 2.3rem;
     }
 
+    .line{
+        height: 185rem;
+    }
+
+
+    .dot2{
+        margin-top: calc(89vh + 185rem);
+    }
 
 }
 
@@ -219,7 +248,8 @@
         left: 6rem; 
     }
 
-    .pokeTitleContainer{
+    .pokeTitleContainer,
+    .movieTitleContainer{
         left: -8rem; 
     }
 }
@@ -230,7 +260,8 @@
         left: 6rem; 
     }
 
-    .pokeTitleContainer{
+    .pokeTitleContainer,
+    .movieTitleContainer{
         left: -8rem; 
     }
 }
@@ -242,6 +273,10 @@
     
     .apiImg{
         margin-top: calc((320vh/2.66) + 70rem);
+    }
+
+    .movieImg{
+        margin-top: calc((320vh/2.66) + 105rem);
     }
 
     .restaurantTitleContainer{
@@ -256,16 +291,20 @@
         margin-top: calc((320vh/2.66) + 85rem);
     }
 
+    .movieTitleContainer{
+        margin-top: calc((320vh/2.66) + 115rem);
+    }
+
     .line{
-        height: 130rem;
+        height: 170rem;
     }
 
     .footer{
-        margin-top: calc(89vh + 130rem + 10rem);
+        margin-top: calc(89vh + 180rem + 5rem);
     }
 
     .dot2{
-        margin-top: calc(89vh + 130rem);
+        margin-top: calc(89vh + 170rem);
     }
 
 }
@@ -273,15 +312,15 @@
 @media (min-height: 1450px) {
 
     .line{
-        height: 160rem;
+        height: 200rem;
     }
 
     .footer{
-        margin-top: calc(89vh + 160rem + 10rem);
+        margin-top: calc(89vh + 200rem + 10rem);
     }
 
     .dot2{
-        margin-top: calc(89vh + 160rem);
+        margin-top: calc(89vh + 200rem);
     }
 }
 
@@ -292,6 +331,10 @@
     
     .apiImg{
         margin-top: calc((320vh/2.66) + 60rem);
+    }
+
+    .movieImg{
+        margin-top: calc((320vh/2.66) + 90rem);
     }
 
     .restaurantTitleContainer{
@@ -306,16 +349,20 @@
         margin-top: calc((320vh/2.66) + 70rem);
     }
 
+    .movieTitleContainer{
+        margin-top: calc((320vh/2.66) + 100rem);
+    }
+
     .line{
-        height: 125rem;
+        height: 145rem;
     }
 
     .footer{
-        margin-top: calc(89vh + 125rem + 10rem);
+        margin-top: calc(89vh + 145rem + 10rem );
     }
 
     .dot2{
-        margin-top: calc(89vh + 1250rem);
+        margin-top: calc(89vh + 145rem);
     }
 }
 
@@ -326,6 +373,10 @@
     
     .apiImg{
         margin-top: calc((320vh/2.66) + 50rem);
+    }
+
+    .movieImg{
+        margin-top: calc((320vh/2.66) + 75rem);
     }
 
     .restaurantTitleContainer{
@@ -340,16 +391,20 @@
         margin-top: calc((320vh/2.66) + 60rem);
     }
 
+    .movieTitleContainer{
+        margin-top: calc((320vh/2.66) + 82rem);
+    }
+
     .line{
-        height: 110rem;
+        height: 120rem;
     }
 
     .footer{
-        margin-top: calc(89vh + 110rem + 10rem);
+        margin-top: calc(89vh + 120rem + 10rem);
     }
 
     .dot2{
-        margin-top: calc(89vh + 110rem);
+        margin-top: calc(89vh + 120rem);
     }
 }
 
@@ -369,6 +424,11 @@
         transform: translateZ(-1px) scale(1.2);
     }
 
+    .movieImg{
+        margin-top: calc((320vh/2.66) + 60rem);
+        transform: translateZ(-1px) scale(1.2);
+    }
+
     .restaurantTitleContainer{
         margin-top: calc((320vh/2.66) + 5rem);
     }
@@ -381,16 +441,20 @@
         margin-top: calc((320vh/2.66) + 47rem);
     }
 
+    .movieTitleContainer{
+        margin-top: calc((320vh/2.66) + 63rem);
+    }
+
     .line{
-        height: 95rem;
+        height: 100rem;
     }
 
     .footer{
-        margin-top: calc(89vh + 95rem + 10rem);
+        margin-top: calc(89vh + 100rem + 10rem);
     }
 
     .dot2{
-        margin-top: calc(89vh + 95rem);
+        margin-top: calc(89vh + 100rem);
     }
 }
 
@@ -402,6 +466,10 @@
     
     .apiImg{
         margin-top: calc((320vh/2.66) + 30rem);
+    }
+
+    .movieImg{
+        margin-top: calc((320vh/2.66) + 45rem);
     }
 
     .restaurantTitleContainer{
@@ -416,12 +484,17 @@
         margin-top: calc((320vh/2.66) + 34rem);
     }
 
+    .movieTitleContainer{
+        margin-top: calc((320vh/2.66) + 50rem);
+        left: -7rem; 
+    }
+
     .line{
         height: 80rem;
     }
 
     .footer{
-        margin-top: calc(89vh + 75rem + 10rem);
+        margin-top: calc(89vh + 80rem + 10rem);
     }
 
     .dot2{
@@ -440,6 +513,10 @@
         margin-top: calc((320vh/2.66) + 25rem);
     }
 
+    .movieImg{
+        margin-top: calc((320vh/2.66) + 37rem);
+    }
+
     .restaurantTitleContainer{
         margin-top: calc((320vh/2.66) + 0rem);
     }
@@ -450,6 +527,10 @@
     
     .apiTitleContainer{
         margin-top: calc((320vh/2.66) + 27rem);
+    }
+
+    .movieTitleContainer{
+        margin-top: calc((320vh/2.66) + 39rem);
     }
 
     .line{
@@ -476,6 +557,10 @@
         margin-top: calc((320vh/2.66) + 21rem);
     }
 
+    .movieImg{
+        margin-top: calc((320vh/2.66) + 30rem);
+    }
+
     .restaurantTitleContainer{
         margin-top: calc((320vh/2.66) + 1rem);
     }
@@ -485,7 +570,11 @@
     }
     
     .apiTitleContainer{
-        margin-top: calc((320vh/2.66) + 23rem);
+        margin-top: calc((320vh/2.66) + 22rem);
+    }
+
+    .movieTitleContainer{
+        margin-top: calc((320vh/2.66) + 32rem);
     }
 
     .line{
