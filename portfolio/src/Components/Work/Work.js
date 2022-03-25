@@ -81,7 +81,7 @@ export default function Work({setVisible2, color}){
                 onMouseLeave={()=>setImages(prev=>({...prev, second: Poke}))} 
                 src={images.second}
                 alt='Post-Moden Pokedex'
-                onClick={() => { window.open('https://www.linkedin.com/feed/update/urn:li:activity:6879435240272601088/','_blank')}}/>
+                onClick={() => { window.open('https://post-modern-pokedex.vercel.app/','_blank')}}/>
 
             <VisibilitySensor partialVisibility={true} onChange={onChangeSecond}>
                 <div className={s.pokeTitleContainer} style={{transform: visible.second ? 'scale(1)' : 'scale(1,.1)'}} >
