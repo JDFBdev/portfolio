@@ -129,7 +129,7 @@
 
 .apiTitleContainer{
     margin-top: calc((320vh/2.66) + 95rem);
-    left: 8rem;
+    left: 4rem;
 }
 
 .movieTitleContainer{
@@ -202,9 +202,12 @@
         font-size: 1.3rem;
     }
 
-    .restaurantTitleContainer,
-    .apiTitleContainer{
+    .restaurantTitleContainer{
         left: 5rem; 
+    }
+
+    .apiTitleContainer{
+        left: 3rem; 
     }
 
     .pokeTitleContainer,
@@ -255,9 +258,12 @@
 }
 
 @media (max-width: 700px) {
-    .restaurantTitleContainer,
-    .apiTitleContainer{
+    .restaurantTitleContainer{
         left: 6rem; 
+    }
+
+    .apiTitleContainer{
+        left: 4rem;
     }
 
     .pokeTitleContainer,

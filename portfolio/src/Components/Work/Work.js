@@ -99,7 +99,7 @@ export default function Work({setVisible2, color}){
 
             <VisibilitySensor partialVisibility={true} onChange={onChangeThird}>
                 <div className={s.apiTitleContainer} style={{transform: visible.third ? 'scale(1)' : 'scale(1,.1)'}}>
-                    <h4 translate="no" className={ visible.third ? s.apiTitle2 : s.apiTitle1} style={{opacity: visible.third ? '1' : '0'}} >Recipe<br/>Api Project</h4>
+                    <h4 translate="no" className={ visible.third ? s.apiTitle2 : s.apiTitle1} style={{opacity: visible.third ? '1' : '0'}} >Meal<br/>Swipe!</h4>
                 </div>
             </VisibilitySensor>
 
