@@ -95,7 +95,7 @@ export default function Work({setVisible2, color}){
                 onMouseLeave={()=>setImages(prev=>({...prev, third: Api}))}
                 src={images.third}
                 alt='Recipe Api'
-                onClick={() => { window.open('https://www.linkedin.com/feed/update/urn:li:activity:6878684525543604224/','_blank')}}/>
+                onClick={() => { window.open('https://mealswipe.vercel.app/','_blank')}}/>
 
             <VisibilitySensor partialVisibility={true} onChange={onChangeThird}>
                 <div className={s.apiTitleContainer} style={{transform: visible.third ? 'scale(1)' : 'scale(1,.1)'}}>
