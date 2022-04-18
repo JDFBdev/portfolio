@@ -1,0 +1,56 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(75,176,169);
+    background: radial-gradient(circle, rgb(47, 47, 47) 0%, rgb(35, 35, 35) 100%);
+    overflow: hidden;
+    position: absolute;
+    z-index: 100;
+}
+
+.logo{
+    position: absolute;
+    width: 200px;
+    height: auto;
+    border-radius: 1rem;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.containerExit{
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.containerDone{
+    opacity: 0;
+    transition:  opacity 1s ease;
+}
+
+.MyClassEnterActive {
+    opacity: 0;
+    transform: translate(0px, 10px);
+    transition: transform .5s, opacity .5s ease;
+}
+  
+.MyClassEnterDone {
+    opacity: 1;
+    transform: translate(0px, -10px);
+    transition: transform .5s, opacity .5s ease;
+}
+  
+.exit{
+    opacity: 1;
+    transform: translate(0px, 10px);
+    transition: transform .5s, opacity .5s ease;
+}
+
+.done{
+    opacity: 0;
+    transform: translate(0px, -30px);
+    transition: transform .5s, opacity .5s ease;
+}
+

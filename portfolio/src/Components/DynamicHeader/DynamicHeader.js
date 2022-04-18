@@ -16,7 +16,7 @@ export default function DynamicHeader(){
                 onInit={(typewriter) => {
                     typewriter
                         .typeString('Juan Diego')
-                        .pauseFor(4000)
+                        .pauseFor(5000)
                         .deleteAll()
                         .typeString('a web developer')
                         .pauseFor(2500)

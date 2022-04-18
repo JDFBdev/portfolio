@@ -52,7 +52,7 @@ export default function Main(){
     return(
         <div>
             <NavBar visibleMain={visible} visibleWork={visible2}  modal={open} color={color}/>
-            <div className={s.wrapper}   >
+            <div className={s.wrapper}>
                 <div id='main'  className={s.container}>
                     <img className={s.img} src={neon} alt='Neo Tokyo' />
                     <div className={s.titleContainer}>
