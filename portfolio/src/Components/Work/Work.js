@@ -11,9 +11,10 @@ import HenryRestaurantGif from '../../img/RestaurantGif.gif';
 import PokeGif from '../../img/PokeGif.gif';
 import ApiGif from '../../img/ApiGif.gif';
 import Movies from '../../img/Movies.jpg';
+import Conciencia from '../../img/conciencia.png';
 
 export default function Work({setVisible2, color}){
-    const [visible, setVisible] = useState({first: false, second: false, third: false, fourth: false});
+    const [visible, setVisible] = useState({first: false, second: false, third: false, fourth: false, fifth: false});
     const [images, setImages] = useState({first: HenryRestaurant, second: Poke, third: Api});
 
     function onChangeFirst (isVisible) {
@@ -34,6 +35,11 @@ export default function Work({setVisible2, color}){
     function onChangeFourth (isVisible) {
         setVisible((prev)=>({...prev, fourth: isVisible}));
         setVisible2(prev=>({...prev, fourth: isVisible}))
+    }
+
+    function onChangeFifth (isVisible) {
+        setVisible((prev)=>({...prev, fifth: isVisible}));
+        setVisible2(prev=>({...prev, fifth: isVisible}))
     }
 
     function onChangeDot1 (isVisible){
@@ -91,15 +97,13 @@ export default function Work({setVisible2, color}){
 
             <img
                 className={s.apiImg}
-                onMouseEnter={()=>setImages(prev=>({...prev, third: ApiGif}))}
-                onMouseLeave={()=>setImages(prev=>({...prev, third: Api}))}
-                src={images.third}
+                src={Conciencia}
                 alt='Recipe Api'
-                onClick={() => { window.open('https://mealswipe.vercel.app/','_blank')}}/>
+                onClick={() => { window.open('https://conciencia-verde-sandbox.vercel.app/','_blank')}}/>
 
             <VisibilitySensor partialVisibility={true} onChange={onChangeThird}>
                 <div className={s.apiTitleContainer} style={{transform: visible.third ? 'scale(1)' : 'scale(1,.1)'}}>
-                    <h4 translate="no" className={ visible.third ? s.apiTitle2 : s.apiTitle1} style={{opacity: visible.third ? '1' : '0'}} >Meal<br/>Swipe!</h4>
+                    <h4 translate="no" className={ visible.third ? s.apiTitle2 : s.apiTitle1} style={{opacity: visible.third ? '1' : '0'}} >Conciencia<br/>Verde</h4>
                 </div>
             </VisibilitySensor>
 
@@ -114,8 +118,23 @@ export default function Work({setVisible2, color}){
                     <h4 translate="no" className={ visible.fourth ? s.movieTitle2 : s.movieTitle1} style={{opacity: visible.fourth ? '1' : '0'}} >I've Already<br/>Seen It</h4>
                 </div>
             </VisibilitySensor>
+
+            <img
+                className={s.concienciaImg}
+                onMouseEnter={()=>setImages(prev=>({...prev, third: ApiGif}))}
+                onMouseLeave={()=>setImages(prev=>({...prev, third: Api}))}
+                src={images.third}
+                alt='Conciencia'
+                onClick={() => { window.open('https://mealswipe.vercel.app/','_blank')}}/>
+
+            <VisibilitySensor partialVisibility={true} onChange={onChangeFifth}>
+                <div className={s.concienciaTitleContainer} style={{transform: visible.fifth ? 'scale(1)' : 'scale(1,.1)'}}>
+                    <h4 translate="no" className={ visible.fifth ? s.concienciaTitle2 : s.concienciaTitle1} style={{opacity: visible.fifth ? '1' : '0'}} >Meal<br/>Swipe!</h4>
+                </div>
+            </VisibilitySensor>
+
             <div className={s.footer}>
-                <Footer  color={color}/>
+                <Footer color={color}/>
             </div>
         </div>
     )
