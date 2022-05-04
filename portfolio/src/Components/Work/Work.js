@@ -72,7 +72,7 @@ export default function Work({setVisible2, color}){
                 onMouseLeave={()=>setImages(prev=>({...prev, first: HenryRestaurant}))} 
                 src={images.first}
                 alt='Henry Restaurant'
-                onClick={() => { window.open('https://www.linkedin.com/feed/update/urn:li:activity:6897664671508152320/','_blank')}}
+                onClick={() => { window.open('https://henry-restaurant.vercel.app/','_blank')}}
             />
 
             <VisibilitySensor partialVisibility={true} onChange={onChangeFirst}>
