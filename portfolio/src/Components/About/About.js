@@ -46,7 +46,7 @@ export default function About() {
                     done various projects to entertain myself with the relations between 
                     art and technology. My passions include music, gaming, training and 
                     creating. I believe curiosity makes humanity move forward.
-                    I'd like to be part of a team where i can meet and learn from amazing 
+                    I'd like to be part of a team where I can meet and learn from amazing 
                     people and develop great workflows.
                   </p>
                   <div className={s.line} />
