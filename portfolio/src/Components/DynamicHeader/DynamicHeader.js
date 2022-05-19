@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import s from './DynamicHeader.module.css';
 import Typewriter from "typewriter-effect";
 

@@ -1,0 +1,221 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(20, 20, 20);
+    position: relative;
+    overflow: hidden;
+}
+
+.background{
+    position: absolute;
+}
+
+.info{
+    position: absolute;
+    z-index: 2;
+    width: 80vw;
+    height: 80vh;
+    max-width: 1530px;
+    max-height: 840px;
+    border-radius: .8rem;
+    left: 0; 
+    right: 0; 
+    top: 1rem;
+    bottom: 0;
+    margin: auto;
+    background-color: rgba(37, 37, 37, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+/* Slider */
+
+.ul{
+    
+    width: 635px;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    list-style: none;
+    padding: 0;
+    height: fit-content;
+}
+
+.li {
+    color: #E6E7E8;
+    background: none;
+    border: none;
+    font-family: 'Montserrat';
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+    cursor: pointer;
+}
+
+.hr {
+  height: 0.3rem;
+  margin: 0;
+  background: #C91865;
+  border-radius: .2rem;
+  border: none;
+  transition: .3s ease-in-out;
+  display: block;
+  margin-top: 2.4rem;
+}
+
+/* All mozilla versions */
+@-moz-document url-prefix() { 
+    .hr {
+      float: left; 
+    }
+}
+
+/* End Slider */
+.who{
+    height: 70%;
+    width: 80%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.img{
+    width: 35%;
+    height: auto;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.whoInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.whoTitle,
+.whoSubtitle,
+.whoText,
+.howTitle,
+.howSubtitle,
+.whereTitle,
+.whereSubtitle,
+.whenTitle,
+.whenBtn{
+    color: #E6E7E8;
+    background: none;
+    border: none;
+    font-family: 'Montserrat';
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.whoHeader{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.whoTitle{
+    font-size: 2.7rem;
+}
+
+.line{
+    height: .3rem;
+    width: 100%;
+    background-color: #C91865;
+    border-radius: .2rem;
+}
+
+.whoSubtitle{
+    font-size: 1.7rem;
+}
+
+.whoText{
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+}
+
+.why{
+    height: 70%;
+    width: 80%;
+}
+
+.how{
+    height: 70%;
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.howTitle{
+    text-align: center;
+    margin-top: -2rem;
+}
+
+.stackGame{
+    border: none;
+    border-radius: 1rem;
+    width: 80%;
+    height: 80%;
+}
+
+.where{
+    height: 70%;
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.whereTitle{
+    margin-top: -2rem;
+}
+
+.when{
+    height: 70%;
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.whenData{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    gap: 1rem;
+    margin-top: -6rem;
+}
+
+.whenTitle{
+    font-size: 4rem;
+}
+
+.whenBtn{
+    font-size: 2.3rem;
+    font-weight: bold;
+    width: 100%;
+    height: 3.8rem;
+    border-radius: .8rem;
+    background-color: #C91865;
+    cursor: pointer;
+}
+
+

@@ -28,7 +28,7 @@ export default function About() {
         <div className={s.container} id='about'>
             <ParticleBackground className={s.background} settings={settings2}/>
             <div className={s.info}>
-                <img className={s.img} src={juan} />
+                <img className={s.img} src={juan} alt='juan' />
                 <div className={s.data}>
                   <div className={s.line} />
                   <h3 className={s.name} >Juan Diego Fernández Bottarini</h3>
