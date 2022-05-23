@@ -7,15 +7,11 @@ import VisibilitySensor from 'react-visibility-sensor';
 import HenryRestaurant from '../../img/HenryRestaurant.jpg';
 import Poke from '../../img/Poke.jpg';
 import Api from '../../img/API.jpg';
-import HenryRestaurantGif from '../../img/RestaurantGif.gif';
-import PokeGif from '../../img/PokeGif.gif';
-import ApiGif from '../../img/ApiGif.gif';
 import Movies from '../../img/Movies.jpg';
 import Conciencia from '../../img/conciencia.png';
 
 export default function Work({setVisible2, color}){
     const [visible, setVisible] = useState({first: false, second: false, third: false, fourth: false, fifth: false});
-    const [images, setImages] = useState({first: HenryRestaurant, second: Poke, third: Api});
 
     function onChangeFirst (isVisible) {
         setVisible((prev)=>({...prev, first: isVisible}));
@@ -68,11 +64,10 @@ export default function Work({setVisible2, color}){
             </div>
             <img 
                 className={s.restaurantImg}
-                onMouseEnter={()=>setImages(prev=>({...prev, first: HenryRestaurantGif}))} 
-                onMouseLeave={()=>setImages(prev=>({...prev, first: HenryRestaurant}))} 
-                src={images.first}
+                src={HenryRestaurant}
                 alt='Henry Restaurant'
                 onClick={() => { window.open('https://henry-restaurant.vercel.app/','_blank')}}
+                loading="lazy"
             />
 
             <VisibilitySensor partialVisibility={true} onChange={onChangeFirst}>
@@ -83,11 +78,11 @@ export default function Work({setVisible2, color}){
 
             <img 
                 className={s.pokeImg}
-                onMouseEnter={()=>setImages(prev=>({...prev, second: PokeGif}))} 
-                onMouseLeave={()=>setImages(prev=>({...prev, second: Poke}))} 
-                src={images.second}
+                src={Poke}
                 alt='Post-Moden Pokedex'
-                onClick={() => { window.open('https://post-modern-pokedex.vercel.app/','_blank')}}/>
+                onClick={() => { window.open('https://post-modern-pokedex.vercel.app/','_blank')}}
+                loading="lazy"
+                />
 
             <VisibilitySensor partialVisibility={true} onChange={onChangeSecond}>
                 <div className={s.pokeTitleContainer} style={{transform: visible.second ? 'scale(1)' : 'scale(1,.1)'}} >
@@ -99,7 +94,9 @@ export default function Work({setVisible2, color}){
                 className={s.apiImg}
                 src={Conciencia}
                 alt='Recipe Api'
-                onClick={() => { window.open('https://conciencia-verde-sandbox.vercel.app/','_blank')}}/>
+                onClick={() => { window.open('https://conciencia-verde-sandbox.vercel.app/','_blank')}}
+                loading="lazy"
+                />
 
             <VisibilitySensor partialVisibility={true} onChange={onChangeThird}>
                 <div className={s.apiTitleContainer} style={{transform: visible.third ? 'scale(1)' : 'scale(1,.1)'}}>
@@ -111,7 +108,9 @@ export default function Work({setVisible2, color}){
                 className={s.movieImg}
                 src={Movies}
                 alt='Moives Api'
-                onClick={() => { window.open('https://ivealreadyseenit.vercel.app/','_blank')}}/>
+                onClick={() => { window.open('https://ivealreadyseenit.vercel.app/','_blank')}}
+                loading="lazy"
+                />
 
             <VisibilitySensor partialVisibility={true} onChange={onChangeFourth}>
                 <div className={s.movieTitleContainer} style={{transform: visible.fourth ? 'scale(1)' : 'scale(1,.1)'}}>
@@ -121,11 +120,11 @@ export default function Work({setVisible2, color}){
 
             <img
                 className={s.concienciaImg}
-                onMouseEnter={()=>setImages(prev=>({...prev, third: ApiGif}))}
-                onMouseLeave={()=>setImages(prev=>({...prev, third: Api}))}
-                src={images.third}
+                src={Api}
                 alt='Conciencia'
-                onClick={() => { window.open('https://mealswipe.vercel.app/','_blank')}}/>
+                onClick={() => { window.open('https://mealswipe.vercel.app/','_blank')}}
+                loading="lazy"
+                />
 
             <VisibilitySensor partialVisibility={true} onChange={onChangeFifth}>
                 <div className={s.concienciaTitleContainer} style={{transform: visible.fifth ? 'scale(1)' : 'scale(1,.1)'}}>

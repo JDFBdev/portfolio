@@ -73,7 +73,6 @@ export default function Main(){
                 {/* <NewAbout open={open}/> */}
                 <About/>
                 <Work setVisible2={setVisible2} color={color} />
-                {/* <Footer color={color}/> */}
             </div>
             <Modal>
             <CSSTransition

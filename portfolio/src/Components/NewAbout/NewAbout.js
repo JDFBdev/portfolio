@@ -4,6 +4,8 @@ import s from './NewAbout.module.css';
 import nav_slider from './Underline.js';
 import juan from '../../img/juan.jpg';
 import Transition from '../Transition/Transition';
+import VoxRoom from '../VoxRoom/VoxRoom';
+import VoxJuan from '../VoxJuan/VoxJuan';
 
 const settings2 = {
   particle: {
@@ -26,8 +28,10 @@ const settings2 = {
 
 export default function NewAbout({open}) {
   const [state, setState] = useState('WHO');
+  const [render, setRender] = useState(true);
   let menu = document.getElementsByClassName(s.ul);
   let menu_slider_click = document.getElementById('nav_slide_click');
+
 
   useEffect(()=>{
     handleClick();
@@ -43,7 +47,12 @@ export default function NewAbout({open}) {
   }
 
   const handleSlider = function(e){
-    setState(e)
+    setState(e);
+    if(e === 'WHO' || e === 'WHERE'){
+      setTimeout(() => setRender(true), 300);
+    } else {
+      setRender(false);
+    }
   }
 
   return (
@@ -63,6 +72,12 @@ export default function NewAbout({open}) {
                 state === 'WHO' &&
                 <Transition>
                   <div className={s.who}>
+                    <div className={s.juan3d}>
+                      {
+                        render &&
+                        <VoxJuan/>
+                      }
+                    </div>
                     <img className={s.img} src={juan} alt='juan' />
                     <div className={s.whoInfo}>
                       <div className={s.whoHeader}>
@@ -97,7 +112,7 @@ export default function NewAbout({open}) {
                 <Transition>
                   <div className={s.how}>
                     <h3 className={s.howTitle}>With the magic of <span style={{color: '#C91865', fontWeight:'bold'}}>web development</span>.<br/>These are my tools.</h3>
-                    <p className={s.howSubtitle}>Click to stack. R to reset.</p>
+                    <p className={s.howSubtitle}>Click to stack the stack. Doubleclick to reset.</p>
                     <iframe className={s.stackGame} title="StackGame" src='https://stack-game-kappa.vercel.app/'></iframe>
                   </div>
                 </Transition>
@@ -109,6 +124,11 @@ export default function NewAbout({open}) {
                   <div className={s.where}>
                     <h3 className={s.howTitle}>IN A <span style={{color: '#C91865', fontWeight:'bold'}}>GALAXY</span> FAR, FAR AWAY... Actually just <span style={{color: '#C91865', fontWeight:'bold'}}>Argentina</span></h3>
                     <p className={s.howSubtitle}>This is my workspace, where my journey begins.</p>
+                    {
+                      render ?
+                      <VoxRoom/> :
+                      <div className={s.loadingRoom}/>
+                    } 
                   </div>
                 </Transition>
               }

@@ -6,6 +6,7 @@
     height: 100%;
     transform-style: preserve-3d;
     z-index: -5;
+    scroll-snap-align: end;
 }
 
 .img{
@@ -103,8 +104,7 @@
 .movieImg:hover,
 .concienciaImg:hover{
     transform: translateZ(-2px) scale(1.3) translateY(-.5rem);
-    filter: brightness(105%);
-    transition: transform .5s, filter .5s;
+    transition: transform .5s;
 }
 
 .restaurantTitleContainer,

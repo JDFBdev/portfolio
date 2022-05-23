@@ -6,7 +6,6 @@
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
-    "cannon": "^0.6.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-hooks-use-modal": "^2.1.0",
@@ -15,9 +14,14 @@
     "react-scripts": "5.0.0",
     "react-transition-group": "^4.4.2",
     "react-visibility-sensor": "^5.1.1",
-    "three": "^0.140.2",
     "typewriter-effect": "^2.18.2",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "@react-spring/three": "^9.0.0-rc.3",
+    "@react-spring/web": "^9.0.0-rc.3",
+    "drei": "^1.5.3",
+    "react-spring": "^8.0.27",
+    "react-three-fiber": "^4.2.21",
+    "three": "^0.120.1"
   },
   "scripts": {
     "start": "react-scripts start",

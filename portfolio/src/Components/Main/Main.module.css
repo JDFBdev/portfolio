@@ -6,6 +6,8 @@
     overflow-y: auto;
     overflow-x: hidden;
     perspective: 10px;
+    scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
 }
 
 .container{
@@ -14,6 +16,7 @@
     height: 100%;
     transform-style: preserve-3d;
     z-index: -1;
+    scroll-snap-align: end;
 }
 
 .img{

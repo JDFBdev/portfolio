@@ -1,39 +1,20 @@
 import React from "react";
 import s from './Footer.module.css';
-import Redes from "../Redes/Redes";
 import {IoIosArrowDropupCircle} from 'react-icons/io'
+import Linkedin from '../../img/linkedin.png';
+import mail from '../../img/mail.png';
+import git from '../../img/git.png';
 
 export default function Footer({color}){
 
     return (
         <div className={s.container}>
-            <Redes/>
-
-            <div className={s.skills}>
-                <h6 className={s.title}>Skills</h6>
-                <p className={s.stack}>JavaScript<br/>
-                    React<br/>
-                    Redux<br/>
-                    Express<br/>
-                    Sequelize<br/>
-                    PostgreSQL<br/>
-                    HTML<br/>
-                    CSS<br/>
-                    Node.js<br/>
-                    Scrum<br/>
-                    TypeScript<br/>
-                    Github
-                </p>
-                <p className={s.stack}>
-                    GraphQL<br/>
-                    Apollo<br/>
-                    Restful API's<br/>
-                    EF SET C2<br/>
-                    Electronics<br/>
-                    CorelDraw<br/>
-                    Solid Works<br/>
-                </p>
+            <div className={s.redes}>
+                <img src={Linkedin} className={s.Logo} alt='linkedin logo' onClick={() => { window.open('https://www.linkedin.com/in/jdfbdev/','_blank')}} />
+                <img src={mail} className={s.Logo} alt='email logo' onClick={() => { window.open('mailto:JDFBdeveloper@gmail.com?','_blank')}} />
+                <img src={git} className={s.Logo} alt='github logo' onClick={() => { window.open('https://github.com/JDFBdev','_blank')}} />
             </div>
+            <p className={s.p}>© 2022<br/>Juan Diego<br/>Fernández Bottarini</p>
             <div className={s.btnContainer}>
                 <a href='#main' >
                 <IoIosArrowDropupCircle size='3.5rem' color={`rgb(${color.r},${color.g},${color.b})`} 
