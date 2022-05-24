@@ -9,3 +9,23 @@
     cursor: -moz-grabbing;
     cursor: -webkit-grabbing;
 }
+
+.header{
+    width: 800px;
+    margin-top: -5rem;
+}
+
+.title,
+.subtitle{
+    color: #E6E7E8;
+    background: none;
+    border: none;
+    font-family: 'Montserrat';
+    font-size: clamp(.8rem, 3.3vw ,2.8rem);
+    font-weight: bold;
+    text-align: center;
+}
+
+.subtitle{
+    font-size: clamp(.6rem, 2.3vw ,1.8rem);
+}

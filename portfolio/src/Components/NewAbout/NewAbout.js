@@ -6,6 +6,7 @@ import juan from '../../img/juan.jpg';
 import Transition from '../Transition/Transition';
 import VoxRoom from '../VoxRoom/VoxRoom';
 import VoxJuan from '../VoxJuan/VoxJuan';
+import Earth from '../Earth/Earth';
 
 const settings2 = {
   particle: {
@@ -47,9 +48,10 @@ export default function NewAbout({open}) {
   }
 
   const handleSlider = function(e){
+    setRender(false);
     setState(e);
-    if(e === 'WHO' || e === 'WHERE'){
-      setTimeout(() => setRender(true), 300);
+    if(e === 'WHO' || e === 'WHY' || e === 'WHERE'){
+      setTimeout(() => setRender(true), 250);
     } else {
       setRender(false);
     }
@@ -74,8 +76,9 @@ export default function NewAbout({open}) {
                   <div className={s.who}>
                     <div className={s.juan3d}>
                       {
-                        render &&
-                        <VoxJuan/>
+                        render ?
+                        <VoxJuan/> :
+                        null
                       }
                     </div>
                     <img className={s.img} src={juan} alt='juan' />
@@ -102,15 +105,19 @@ export default function NewAbout({open}) {
 
               {
                 state === 'WHY' &&
-                <div className={s.why}>
-                  
+                <div className={s.why}>  
+                  {
+                    render ?
+                    <Earth/> :
+                    <div className={s.loadingRoom}/>
+                  }
                 </div>
               }
 
               {
                 state === 'HOW' &&
                 <Transition>
-                  <div className={s.how}>
+                  <div className={s.how}> 
                     <h3 className={s.howTitle}>With the magic of <span style={{color: '#C91865', fontWeight:'bold'}}>web development</span>.<br/>These are my tools.</h3>
                     <p className={s.howSubtitle}>Click to stack the stack. Doubleclick to reset.</p>
                     <iframe className={s.stackGame} title="StackGame" src='https://stack-game-kappa.vercel.app/'></iframe>

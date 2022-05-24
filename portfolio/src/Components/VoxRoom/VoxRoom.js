@@ -1,7 +1,8 @@
-import React, { Suspense, useRef } from "react";
+import React, { Suspense, useRef, useEffect, useState } from "react";
 import { Canvas, useFrame } from 'react-three-fiber';
 import { useGLTFLoader, Stars, OrbitControls } from 'drei';
 import s from './VoxRoom.module.css';
+
 
 const Model = function(){
     const gltf = useGLTFLoader('/room.glb', true);

@@ -4,7 +4,7 @@ import s from './Main.module.css';
 import Dot from '../Dot/Dot'
 import DynamicHeader from "../DynamicHeader/DynamicHeader";
 import About from "../About/About";
-// import NewAbout from '../NewAbout/NewAbout';
+//import NewAbout from '../NewAbout/NewAbout';
 import NavBar from "../NavBar/NavBar";
 import VisibilitySensor from "react-visibility-sensor";
 import Work from "../Work/Work";
@@ -84,7 +84,7 @@ export default function Main(){
             >
                 <div className={s.modalContainer} >
                     <h1 className={s.modalTitle} >Looks like I managed to get your attention...</h1>
-                    <div className={s.modalData}>
+                    <div className={s.modalData}>+
                         <Redes/>
                         <img src={omg} className={s.gif} alt='omg'/>
                     </div>
