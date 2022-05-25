@@ -3,8 +3,8 @@ import neon from '../../img/neon.jpg';
 import s from './Main.module.css';
 import Dot from '../Dot/Dot'
 import DynamicHeader from "../DynamicHeader/DynamicHeader";
-import About from "../About/About";
-//import NewAbout from '../NewAbout/NewAbout';
+//import About from "../About/About";
+import NewAbout from '../NewAbout/NewAbout';
 import NavBar from "../NavBar/NavBar";
 import VisibilitySensor from "react-visibility-sensor";
 import Work from "../Work/Work";
@@ -70,8 +70,8 @@ export default function Main(){
                         </h1>
                     </div>
                 </div>
-                {/* <NewAbout open={open}/> */}
-                <About/>
+                <NewAbout open={open}/>
+                {/* <About/> */}
                 <Work setVisible2={setVisible2} color={color} />
             </div>
             <Modal>

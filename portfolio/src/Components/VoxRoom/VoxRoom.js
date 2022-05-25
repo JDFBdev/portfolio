@@ -1,6 +1,7 @@
-import React, { Suspense, useRef, useEffect, useState } from "react";
+import React, { Suspense, useRef } from "react";
 import { Canvas, useFrame } from 'react-three-fiber';
 import { useGLTFLoader, Stars, OrbitControls } from 'drei';
+import { useMediaQuery } from 'react-responsive';
 import s from './VoxRoom.module.css';
 
 
@@ -25,13 +26,15 @@ const Lights = function(){
 
 export default function VoxRoom(){
 
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1100px)' })
+
     return(
         <Canvas className={s.canvas} colorManagement camera={{position: [100, 50, 50], fov: 70 /* Ventana, altura, puerta */ }}>  
             <Lights/>
             <Stars count={2000} fade factor={7}/>
             <OrbitControls/>
             <Suspense fallback={null}>
-                <mesh rotation={[0, 1.3, 0]}>
+                <mesh rotation={[0, 1.3, 0]} scale={ isTabletOrMobile ? [.7, .7, .7] : [1, 1, 1]}>
                     <Model/>
                 </mesh>
             </Suspense>

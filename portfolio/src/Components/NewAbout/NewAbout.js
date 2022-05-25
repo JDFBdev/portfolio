@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react'
-import ParticleBackground from 'react-particle-backgrounds'
+import React, { useState, useEffect } from 'react';
+import ParticleBackground from 'react-particle-backgrounds';
+import { useMediaQuery } from 'react-responsive';
 import s from './NewAbout.module.css';
 import nav_slider from './Underline.js';
 import juan from '../../img/juan.jpg';
@@ -33,18 +34,28 @@ export default function NewAbout({open}) {
   let menu = document.getElementsByClassName(s.ul);
   let menu_slider_click = document.getElementById('nav_slide_click');
 
+  const query650 = useMediaQuery({ query: '(max-width: 650px)' });  // Queries for navbar 650px, 500px
+  const query500 = useMediaQuery({ query: '(max-width: 500px)' });
 
   useEffect(()=>{
     handleClick();
   })
-
+  
   const handleClick = function(){
+    
+    function handleQuery(){
+      if (query650 && query500) return -107.4;  // chico
+      else if (query650 && !query500) return -107 // mediano
+      else return -108.3  // grande
+    }
+
     nav_slider( menu[0], function( el, width, tempMarginLeft ) {
+      let aux = handleQuery();
       el.onclick = () => {
           menu_slider_click.style.width =  width + 1.5 + '%';                    
-          menu_slider_click.style.marginLeft = tempMarginLeft + -108.3 + '%';   // toca esto para ver donde inicia 
+          menu_slider_click.style.marginLeft = tempMarginLeft + aux + '%';   // toca esto para ver donde inicia 
         }
-    });
+    }, query650, query500);
   }
 
   const handleSlider = function(e){

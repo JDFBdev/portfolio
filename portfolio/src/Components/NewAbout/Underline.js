@@ -1,4 +1,4 @@
-export default function nav_slider( menu, callback ) {
+export default function nav_slider( menu, callback, query650, query500 ) {
     let menu_width = menu.offsetWidth;
     // We only want the <li> </li> tags
     menu = menu.getElementsByTagName( 'li' );            
@@ -15,8 +15,13 @@ export default function nav_slider( menu, callback ) {
         }            
         // Set mouse event  hover/click
         callback( el, width, tempMarginLeft );      
+
         /* We store it in array because the later accumulated value is used for positioning */
-        marginLeft.push( width + 7.6 );  // toca esto para cambiar cuanto espacio se mueve 
+        // toca esto para cambiar cuanto espacio se mueve 
+        if (query650 && query500) marginLeft.push( width + 6.3 );  // chico
+        else if (query650 && !query500) marginLeft.push( width + 6.4 ); // mediano
+        else marginLeft.push( width + 7.6 );  // grande
+        
         } );
     }
 }
