@@ -67,7 +67,6 @@ export default function Work({setVisible2, color}){
                 src={HenryRestaurant}
                 alt='Henry Restaurant'
                 onClick={() => { window.open('https://henry-restaurant.vercel.app/','_blank')}}
-                loading="lazy"
             />
 
             <VisibilitySensor partialVisibility={true} onChange={onChangeFirst}>
@@ -81,7 +80,6 @@ export default function Work({setVisible2, color}){
                 src={Poke}
                 alt='Post-Moden Pokedex'
                 onClick={() => { window.open('https://post-modern-pokedex.vercel.app/','_blank')}}
-                loading="lazy"
                 />
 
             <VisibilitySensor partialVisibility={true} onChange={onChangeSecond}>
@@ -95,7 +93,6 @@ export default function Work({setVisible2, color}){
                 src={Conciencia}
                 alt='Recipe Api'
                 onClick={() => { window.open('https://conciencia-verde-sandbox.vercel.app/','_blank')}}
-                loading="lazy"
                 />
 
             <VisibilitySensor partialVisibility={true} onChange={onChangeThird}>
@@ -109,7 +106,6 @@ export default function Work({setVisible2, color}){
                 src={Movies}
                 alt='Moives Api'
                 onClick={() => { window.open('https://ivealreadyseenit.vercel.app/','_blank')}}
-                loading="lazy"
                 />
 
             <VisibilitySensor partialVisibility={true} onChange={onChangeFourth}>
@@ -123,7 +119,6 @@ export default function Work({setVisible2, color}){
                 src={Api}
                 alt='Conciencia'
                 onClick={() => { window.open('https://mealswipe.vercel.app/','_blank')}}
-                loading="lazy"
                 />
 
             <VisibilitySensor partialVisibility={true} onChange={onChangeFifth}>
