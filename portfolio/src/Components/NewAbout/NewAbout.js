@@ -36,7 +36,7 @@ export default function NewAbout({open}) {
 
   const query650 = useMediaQuery({ query: '(max-width: 650px)' });  // Queries for navbar 650px, 500px
   const query500 = useMediaQuery({ query: '(max-width: 500px)' });
-  document.styleSheets[0].insertRule('canvas { outline:none; border:none; }', 0);  // Remove outline from canvas
+  //document.styleSheets[0].insertRule('canvas { outline:none; border:none; }', 0);  // Remove outline from canvas
 
   useEffect(()=>{
     handleClick();
