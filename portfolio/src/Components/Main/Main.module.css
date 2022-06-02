@@ -26,7 +26,7 @@
     position: absolute;
     object-fit: cover;
     z-index: -100;
-    transform: translateZ(-10px) scale(2.2,2.2);
+    transform: translateZ(-10px) scale(2.1,2);
     filter: contrast(110%);
 }
 
