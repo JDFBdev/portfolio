@@ -84,7 +84,7 @@ export default function Main(){
             >
                 <div className={s.modalContainer} >
                     <h1 className={s.modalTitle} >Looks like I managed to get your attention...</h1>
-                    <div className={s.modalData}>+
+                    <div className={s.modalData}>
                         <Redes/>
                         <img src={omg} className={s.gif} alt='omg'/>
                     </div>
