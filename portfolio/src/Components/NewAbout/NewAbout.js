@@ -141,7 +141,7 @@ export default function NewAbout({open}) {
                 state === 'WHERE' &&
                 <Transition>
                   <div className={s.where}>
-                    <h3 className={s.howTitle}>IN A <span style={{color: '#C91865', fontWeight:'bold'}}>GALAXY</span> FAR, FAR AWAY... Actually just <span style={{color: '#C91865', fontWeight:'bold'}}>Argentina</span></h3>
+                    <h3 className={s.howTitle}>IN A <span style={{color: '#C91865', fontWeight:'bold'}}>GALAXY</span> FAR, FAR AWAY... Actually just <span style={{color: '#C91865', fontWeight:'bold'}}>Argentina</span>.</h3>
                     <p className={s.howSubtitle}>This is my workspace, where my journey begins.</p>
                     {
                       render ?
