@@ -57,11 +57,11 @@
     margin-top: calc(89vh + 225rem);
 }
 
-.restaurantImg,
-.pokeImg,
-.apiImg,
-.movieImg,
-.concienciaImg{
+.firstImg,
+.secondImg,
+.thirdImg,
+.fourthImg,
+.fifthImg{
     position: absolute;
     width: 43%;
     max-width: 900px;
@@ -74,44 +74,44 @@
     border-radius: .3rem;
 }
 
-.restaurantImg{
+.firstImg{
     margin-top: calc(320vh/2.66);
 }
 
-.pokeImg{
+.secondImg{
     width: 42.4%;
     margin-top: calc((320vh/2.66) + 40rem);
     margin-left: 59.7%;
 }
 
-.apiImg{
+.thirdImg{
     margin-top: calc((320vh/2.66) + 80rem);
 }
 
-.movieImg{
+.fourthImg{
     width: 42.4%;
     margin-top: calc((320vh/2.66) + 120rem);
     margin-left: 59.7%;
 }
 
-.concienciaImg{
+.fifthImg{
     margin-top: calc((320vh/2.66) + 155rem);
 }
 
-.restaurantImg:hover,
-.pokeImg:hover,
-.apiImg:hover,
-.movieImg:hover,
-.concienciaImg:hover{
+.firstImg:hover,
+.secondImg:hover,
+.thirdImg:hover,
+.fourthImg:hover,
+.fifthImg:hover{
     transform: translateZ(-2px) scale(1.3) translateY(-.5rem);
     transition: transform .5s;
 }
 
-.restaurantTitleContainer,
-.pokeTitleContainer,
-.apiTitleContainer,
-.movieTitleContainer,
-.concienciaTitleContainer{
+.firstTitleContainer,
+.secondTitleContainer,
+.thirdTitleContainer,
+.fourthTitleContainer,
+.fifthTitleContainer{
     border: none;
     width: fit-content;
     height: fit-content;
@@ -124,38 +124,38 @@
 
 }
 
-.restaurantTitleContainer{
+.firstTitleContainer{
     margin-top: calc((320vh/2.66) + 15rem);
     left: 8rem; 
 }
 
-.pokeTitleContainer{
+.secondTitleContainer{
     margin-top: calc((320vh/2.66) + 55rem);
     left: -10rem; 
 }
 
-.apiTitleContainer{
+.thirdTitleContainer{
     margin-top: calc((320vh/2.66) + 95rem);
     left: 8rem;
 }
 
-.movieTitleContainer{
+.fourthTitleContainer{
     margin-top: calc((320vh/2.66) + 135rem);
     left: -8rem; 
 }
 
-.concienciaTitleContainer{
+.fifthTitleContainer{
     margin-top: calc((320vh/2.66) + 168rem);
     left: 4rem;
 }
 
 
 
-.restaurantTitle1,
-.pokeTitle1,
-.apiTitle1,
-.movieTitle1,
-.concienciaTitle1{
+.firstTitle1,
+.secondTitle1,
+.thirdTitle1,
+.fourthTitle1,
+.fifthTitle1{
     font-family: 'Montserrat';
     font-size: 1.8rem;
     margin-top: 1rem;
@@ -165,16 +165,16 @@
     color: #2F2F2F;
 }
 
-.pokeTitle1,
-.movieTitle1{
+.secondTitle1,
+.fourthTitle1{
     text-align: end;
 }
 
-.restaurantTitle2,
-.pokeTitle2,
-.apiTitle2,
-.movieTitle2,
-.concienciaTitle2{
+.firstTitle2,
+.secondTitle2,
+.thirdTitle2,
+.fourthTitle2,
+.fifthTitle2{
     font-family: 'Montserrat';
     font-size: 1.8rem;
     margin-top: 1rem;
@@ -187,8 +187,8 @@
     transition-delay: .8s;
 }
 
-.pokeTitle2,
-.movieTitle2{
+.secondTitle2,
+.fourthTitle2{
     text-align: end;
 }
 
@@ -211,61 +211,61 @@
   
 @media (max-width: 950px) {
 
-    .restaurantTitle1,
-    .pokeTitle1,
-    .apiTitle1,
-    .movieTitle1,
-    .concienciaTitle1,
-    .restaurantTitle2,
-    .pokeTitle2,
-    .apiTitle2,
-    .movieTitle2,
-    .concienciaTitle2{
+    .firstTitle1,
+    .secondTitle1,
+    .thirdTitle1,
+    .fourthTitle1,
+    .fifthTitle1,
+    .firstTitle2,
+    .secondTitle2,
+    .thirdTitle2,
+    .fourthTitle2,
+    .fifthTitle2{
         font-size: 1.3rem;
     }
 
-    .restaurantTitleContainer{
+    .firstTitleContainer{
         left: 5rem; 
     }
 
-    .apiTitleContainer{
+    .thirdTitleContainer{
         
         left: 7rem;
     }
 
-    .concienciaTitleContainer{
+    .fifthTitleContainer{
         left: 3rem; 
     }
 
-    .pokeTitleContainer,
-    .movieTitleContainer{
+    .secondTitleContainer,
+    .fourthTitleContainer{
         left: -8rem; 
     }
 }
 
 @media (min-width: 2100px) {
 
-    .restaurantImg,
-    .apiImg,
-    .concienciaImg{
+    .firstImg,
+    .thirdImg,
+    .fifthImg{
         margin-left: calc((100vw/2) - 10rem - 950px);
     }
 
-    .pokeImg,
-    .movieImg{
+    .secondImg,
+    .fourthImg{
         margin-left: calc((100vw/2) + 13.5rem );
     }
     
-    .restaurantTitle1,
-    .pokeTitle1,
-    .apiTitle1,
-    .movieTitle1,
-    .concienciaTitle1,
-    .restaurantTitle2,
-    .pokeTitle2,
-    .apiTitle2,
-    .movieTitle2,
-    .concienciaTitle2{
+    .firstTitle1,
+    .secondTitle1,
+    .thirdTitle1,
+    .fourthTitle1,
+    .fifthTitle1,
+    .firstTitle2,
+    .secondTitle2,
+    .thirdTitle2,
+    .fourthTitle2,
+    .fifthTitle2{
         font-size: 2.3rem;
     }
 
@@ -280,54 +280,54 @@
 }
 
 @media (max-width: 700px) {
-    .restaurantTitleContainer{
+    .firstTitleContainer{
         left: 6rem; 
     }
 
-    .concienciaTitleContainer{
+    .fifthTitleContainer{
         left: 4rem;
     }
 
-    .pokeTitleContainer,
-    .movieTitleContainer{
+    .secondTitleContainer,
+    .fourthTitleContainer{
         left: -8rem; 
     }
 }
 
 @media (max-width: 1730px) {
-    .pokeImg{
+    .secondImg{
         margin-top: calc((320vh/2.66) + 35rem);
     }
     
-    .apiImg{
+    .thirdImg{
         margin-top: calc((320vh/2.66) + 70rem);
     }
 
-    .movieImg{
+    .fourthImg{
         margin-top: calc((320vh/2.66) + 105rem);
     }
 
-    .concienciaImg{
+    .fifthImg{
         margin-top: calc((320vh/2.66) + 135rem);
     }
 
-    .restaurantTitleContainer{
+    .firstTitleContainer{
         margin-top: calc((320vh/2.66) + 10rem);
     }
     
-    .pokeTitleContainer{
+    .secondTitleContainer{
         margin-top: calc((320vh/2.66) + 50rem);
     }
     
-    .apiTitleContainer{
+    .thirdTitleContainer{
         margin-top: calc((320vh/2.66) + 85rem);
     }
 
-    .movieTitleContainer{
+    .fourthTitleContainer{
         margin-top: calc((320vh/2.66) + 115rem);
     }
 
-    .concienciaTitleContainer{
+    .fifthTitleContainer{
         margin-top: calc((320vh/2.66) + 147rem);
     }
 
@@ -361,39 +361,39 @@
 }
 
 @media (max-width: 1450px) {
-    .pokeImg{
+    .secondImg{
         margin-top: calc((320vh/2.66) + 30rem);
     }
     
-    .apiImg{
+    .thirdImg{
         margin-top: calc((320vh/2.66) + 60rem);
     }
 
-    .movieImg{
+    .fourthImg{
         margin-top: calc((320vh/2.66) + 90rem);
     }
 
-    .concienciaImg{
+    .fifthImg{
         margin-top: calc((320vh/2.66) + 118rem);
     }
 
-    .restaurantTitleContainer{
+    .firstTitleContainer{
         margin-top: calc((320vh/2.66) + 10rem);
     }
     
-    .pokeTitleContainer{
+    .secondTitleContainer{
         margin-top: calc((320vh/2.66) + 40rem);
     }
     
-    .apiTitleContainer{
+    .thirdTitleContainer{
         margin-top: calc((320vh/2.66) + 70rem);
     }
 
-    .movieTitleContainer{
+    .fourthTitleContainer{
         margin-top: calc((320vh/2.66) + 100rem);
     }
 
-    .concienciaTitleContainer{
+    .fifthTitleContainer{
         margin-top: calc((320vh/2.66) + 128rem);
     }
 
@@ -411,39 +411,39 @@
 }
 
 @media (max-width: 1200px) {
-    .pokeImg{
+    .secondImg{
         margin-top: calc((320vh/2.66) + 25rem);
     }
     
-    .apiImg{
+    .thirdImg{
         margin-top: calc((320vh/2.66) + 50rem);
     }
 
-    .movieImg{
+    .fourthImg{
         margin-top: calc((320vh/2.66) + 75rem);
     }
 
-    .concienciaImg{
+    .fifthImg{
         margin-top: calc((320vh/2.66) + 100rem);
     }
 
-    .restaurantTitleContainer{
+    .firstTitleContainer{
         margin-top: calc((320vh/2.66) + 10rem);
     }
     
-    .pokeTitleContainer{
+    .secondTitleContainer{
         margin-top: calc((320vh/2.66) + 33rem);
     }
     
-    .apiTitleContainer{
+    .thirdTitleContainer{
         margin-top: calc((320vh/2.66) + 60rem);
     }
 
-    .movieTitleContainer{
+    .fourthTitleContainer{
         margin-top: calc((320vh/2.66) + 82rem);
     }
 
-    .concienciaTitleContainer{
+    .fifthTitleContainer{
         margin-top: calc((320vh/2.66) + 108rem);
     }
 
@@ -462,47 +462,47 @@
 
 @media (max-width: 1000px) {
 
-    .restaurantImg{
+    .firstImg{
         transform: translateZ(-1px) scale(1.2);
     }
 
-    .pokeImg{
+    .secondImg{
         margin-top: calc((320vh/2.66) + 20rem);
         transform: translateZ(-1px) scale(1.2);
     }
     
-    .apiImg{
+    .thirdImg{
         margin-top: calc((320vh/2.66) + 40rem);
         transform: translateZ(-1px) scale(1.2);
     }
 
-    .movieImg{
+    .fourthImg{
         margin-top: calc((320vh/2.66) + 60rem);
         transform: translateZ(-1px) scale(1.2);
     }
 
-    .concienciaImg{
+    .fifthImg{
         margin-top: calc((320vh/2.66) + 80rem);
         transform: translateZ(-1px) scale(1.2);
     }
 
-    .restaurantTitleContainer{
+    .firstTitleContainer{
         margin-top: calc((320vh/2.66) + 5rem);
     }
     
-    .pokeTitleContainer{
+    .secondTitleContainer{
         margin-top: calc((320vh/2.66) + 27rem);
     }
     
-    .apiTitleContainer{
+    .thirdTitleContainer{
         margin-top: calc((320vh/2.66) + 47rem);
     }
 
-    .movieTitleContainer{
+    .fourthTitleContainer{
         margin-top: calc((320vh/2.66) + 63rem);
     }
 
-    .concienciaTitleContainer{
+    .fifthTitleContainer{
         margin-top: calc((320vh/2.66) + 85rem);
     }
 
@@ -521,41 +521,41 @@
 
 @media (max-width: 800px) {
 
-    .pokeImg{
+    .secondImg{
         margin-top: calc((320vh/2.66) + 15rem);
     }
     
-    .apiImg{
+    .thirdImg{
         margin-top: calc((320vh/2.66) + 30rem);
     }
 
-    .movieImg{
+    .fourthImg{
         margin-top: calc((320vh/2.66) + 45rem);
     }
 
-    .concienciaImg{
+    .fifthImg{
         margin-top: calc((320vh/2.66) + 60rem);
     }
 
-    .restaurantTitleContainer{
+    .firstTitleContainer{
         margin-top: calc((320vh/2.66) + 5rem);
     }
     
-    .pokeTitleContainer{
+    .secondTitleContainer{
         margin-top: calc((320vh/2.66) + 20rem);
     }
     
-    .apiTitleContainer{
+    .thirdTitleContainer{
         margin-top: calc((320vh/2.66) + 34rem);
         left: 6rem;
     }
 
-    .movieTitleContainer{
+    .fourthTitleContainer{
         margin-top: calc((320vh/2.66) + 50rem);
         left: -7rem; 
     }
 
-    .concienciaTitleContainer{
+    .fifthTitleContainer{
         margin-top: calc((320vh/2.66) + 64rem);
         left: 3rem;
     }
@@ -576,39 +576,39 @@
 
 @media (max-width: 600px) {
 
-    .pokeImg{
+    .secondImg{
         margin-top: calc((320vh/2.66) + 13rem);
     }
     
-    .apiImg{
+    .thirdImg{
         margin-top: calc((320vh/2.66) + 25rem);
     }
 
-    .movieImg{
+    .fourthImg{
         margin-top: calc((320vh/2.66) + 37rem);
     }
 
-    .concienciaImg{
+    .fifthImg{
         margin-top: calc((320vh/2.66) + 48rem);
     }
 
-    .restaurantTitleContainer{
+    .firstTitleContainer{
         margin-top: calc((320vh/2.66) + 0rem);
     }
     
-    .pokeTitleContainer{
+    .secondTitleContainer{
         margin-top: calc((320vh/2.66) + 14rem);
     }
     
-    .apiTitleContainer{
+    .thirdTitleContainer{
         margin-top: calc((320vh/2.66) + 27rem);
     }
 
-    .movieTitleContainer{
+    .fourthTitleContainer{
         margin-top: calc((320vh/2.66) + 39rem);
     }
 
-    .concienciaTitleContainer{
+    .fifthTitleContainer{
         margin-top: calc((320vh/2.66) + 50rem);
     }
 
@@ -628,39 +628,39 @@
 
 @media (max-width: 450px) {
 
-    .pokeImg{
+    .secondImg{
         margin-top: calc((320vh/2.66) + 11rem);
     }
     
-    .apiImg{
+    .thirdImg{
         margin-top: calc((320vh/2.66) + 23rem);
     }
 
-    .movieImg{
+    .fourthImg{
         margin-top: calc((320vh/2.66) + 35rem);
     }
 
-    .concienciaImg{
+    .fifthImg{
         margin-top: calc((320vh/2.66) + 45rem);
     }
 
-    .restaurantTitleContainer{
+    .firstTitleContainer{
         margin-top: calc((320vh/2.66) + 1rem);
     }
     
-    .pokeTitleContainer{
+    .secondTitleContainer{
         margin-top: calc((320vh/2.66) + 12rem);
     }
     
-    .apiTitleContainer{
+    .thirdTitleContainer{
         margin-top: calc((320vh/2.66) + 24rem);
     }
 
-    .movieTitleContainer{
+    .fourthTitleContainer{
         margin-top: calc((320vh/2.66) + 35rem);
     }
 
-    .concienciaTitleContainer{
+    .fifthTitleContainer{
         margin-top: calc((320vh/2.66) + 46rem);
     }
 

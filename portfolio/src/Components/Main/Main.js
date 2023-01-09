@@ -12,6 +12,7 @@ import { useModal } from "react-hooks-use-modal";
 import { CSSTransition } from "react-transition-group";
 import omg from '../../img/omg.gif';
 import Redes from "../Redes/Redes";
+import renacimiento from "../../img/art.webp";
 
 export default function Main(){
     const [visible, setVisible] = useState(true); // Let the navbar know if it has to display dynamic header
