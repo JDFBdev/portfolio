@@ -80,7 +80,7 @@ export default function Work({setVisible2, color}){
                 src={Poke}
                 alt='Second Project'
                 onClick={() => { window.open('https://post-modern-pokedex.vercel.app/','_blank')}}
-                />
+            />
 
             <VisibilitySensor partialVisibility={true} onChange={onChangeSecond}>
                 <div className={s.secondTitleContainer} style={{transform: visible.second ? 'scale(1)' : 'scale(1,.1)'}} >
@@ -93,7 +93,7 @@ export default function Work({setVisible2, color}){
                 src={Conciencia}
                 alt='Third Project'
                 onClick={() => { window.open('https://conciencia-verde-sandbox.vercel.app/','_blank')}}
-                />
+            />
 
             <VisibilitySensor partialVisibility={true} onChange={onChangeThird}>
                 <div className={s.thirdTitleContainer} style={{transform: visible.third ? 'scale(1)' : 'scale(1,.1)'}}>
@@ -106,7 +106,7 @@ export default function Work({setVisible2, color}){
                 src={Movies}
                 alt='Fourth Project'
                 onClick={() => { window.open('https://ivealreadyseenit.vercel.app/','_blank')}}
-                />
+            />
 
             <VisibilitySensor partialVisibility={true} onChange={onChangeFourth}>
                 <div className={s.fourthTitleContainer} style={{transform: visible.fourth ? 'scale(1)' : 'scale(1,.1)'}}>
@@ -119,7 +119,7 @@ export default function Work({setVisible2, color}){
                 src={Aramis}
                 alt='Fifth Project'
                 onClick={() => { window.open('https://libreriaaramis.vercel.app/','_blank')}}
-                />
+            />
 
             <VisibilitySensor partialVisibility={true} onChange={onChangeFifth}>
                 <div className={s.fifthTitleContainer} style={{transform: visible.fifth ? 'scale(1)' : 'scale(1,.1)'}}>
