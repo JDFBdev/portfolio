@@ -4,7 +4,6 @@ import Main from './Components/Main/Main';
 import Intro from './Components/Intro/Intro';
 import axios from 'axios';
 import firebase from "firebase/compat/app"
-import "firebase/compat/auth"
 import "firebase/compat/firestore"
 
 const firebaseConfig = {
