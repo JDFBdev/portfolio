@@ -3,8 +3,8 @@ import s from './App.module.css';
 import Main from './Components/Main/Main';
 import Intro from './Components/Intro/Intro';
 import axios from 'axios';
-import firebase from "firebase/compat/app"
-import "firebase/compat/firestore"
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/firestore';
 
 const firebaseConfig = {
     apiKey: "AIzaSyAfx86mlwSPK1nyghZF04lBAp42kCeItjE",
@@ -15,9 +15,7 @@ const firebaseConfig = {
     appId: "1:574685768390:web:d27ea16828feebbedb45c7"
 };
 
-if (firebase.apps.length === 0) {
-  firebase.initializeApp(firebaseConfig)
-}
+const app = firebase.initializeApp(firebaseConfig);
 
 function App() {
     const [on, setOn] = useState(true);
