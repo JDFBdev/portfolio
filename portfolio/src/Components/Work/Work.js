@@ -50,7 +50,7 @@ export default function Work({setVisible2, color}){
         <div className={s.container} id='work'>
 
             <img src={coso} className={s.img} alt='coso' />
-            <h1 className={s.title} >Lastest<br/>Projects</h1>
+            <h1 className={s.title} >Latest<br/>Projects</h1>
             <div className={s.dot} >
                 <VisibilitySensor onChange={onChangeDot1}>
                     <Dot isdiv={true} color={color}/>
