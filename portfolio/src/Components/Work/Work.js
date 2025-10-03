@@ -4,11 +4,11 @@ import coso from '../../img/coso.png';
 import Dot from '../Dot/Dot';
 import Footer from '../Footer/Footer';
 import VisibilitySensor from 'react-visibility-sensor';
-import HenryRestaurant from '../../img/HenryRestaurant.jpg';
+import StratusGrid from '../../img/Stratusgrid.svg';
 import Poke from '../../img/Poke.jpg';
-import Aramis from '../../img/aramis.png';
-import Movies from '../../img/Movies.jpg';
-import Conciencia from '../../img/conciencia.png';
+import N2uitive from '../../img/N2.svg';
+import Intuiflow from '../../img/Intuiflow.svg';
+import Atlas from '../../img/Atlas 2.jpg';
 
 export default function Work({setVisible2, color}){
     const [visible, setVisible] = useState({first: false, second: false, third: false, fourth: false, fifth: false});
@@ -64,66 +64,66 @@ export default function Work({setVisible2, color}){
             </div>
             <img 
                 className={s.firstImg}
-                src={HenryRestaurant}
+                src={Atlas}
                 alt='First Project'
-                onClick={() => { window.open('https://henry-restaurant.vercel.app/','_blank')}}
+                onClick={() => { window.open('https://theme.kalungi.com/','_blank')}}
             />
 
             <VisibilitySensor partialVisibility={true} onChange={onChangeFirst}>
                 <div className={s.firstTitleContainer} style={{transform: visible.first ? 'scale(1)' : 'scale(1,.1)'}}>
-                    <h4 translate="no" className={ visible.first ? s.firstTitle2 : s.firstTitle1} style={{opacity: visible.first ? '1' : '0'}} >Henry<br/>Restaurant</h4>
+                    <h4 translate="no" className={ visible.first ? s.firstTitle2 : s.firstTitle1} style={{opacity: visible.first ? '1' : '0'}} >Atlas<br/>Website Themes</h4>
                 </div>
             </VisibilitySensor>
 
             <img 
                 className={s.secondImg}
-                src={Poke}
+                src={Intuiflow}
                 alt='Second Project'
-                onClick={() => { window.open('https://post-modern-pokedex.vercel.app/','_blank')}}
+                onClick={() => { window.open('https://demanddriventech.com/','_blank')}}
             />
 
             <VisibilitySensor partialVisibility={true} onChange={onChangeSecond}>
                 <div className={s.secondTitleContainer} style={{transform: visible.second ? 'scale(1)' : 'scale(1,.1)'}} >
-                    <h4 translate="no" className={ visible.second ? s.secondTitle2 : s.secondTitle1} style={{opacity: visible.second ? '1' : '0'}} >Post-Modern<br/>Pokedex</h4>
+                    <h4 translate="no" className={ visible.second ? s.secondTitle2 : s.secondTitle1} style={{opacity: visible.second ? '1' : '0'}} >Intuiflow</h4>
                 </div>
             </VisibilitySensor>
 
             <img
                 className={s.thirdImg}
-                src={Conciencia}
+                src={StratusGrid}
                 alt='Third Project'
-                onClick={() => { window.open('https://conciencia-verde-sandbox.vercel.app/','_blank')}}
+                onClick={() => { window.open('https://stratusgrid.com/','_blank')}}
             />
 
             <VisibilitySensor partialVisibility={true} onChange={onChangeThird}>
                 <div className={s.thirdTitleContainer} style={{transform: visible.third ? 'scale(1)' : 'scale(1,.1)'}}>
-                    <h4 translate="no" className={ visible.third ? s.thirdTitle2 : s.thirdTitle1} style={{opacity: visible.third ? '1' : '0'}} >Conciencia<br/>Verde</h4>
+                    <h4 translate="no" className={ visible.third ? s.thirdTitle2 : s.thirdTitle1} style={{opacity: visible.third ? '1' : '0'}} >StratusGrid</h4>
                 </div>
             </VisibilitySensor>
 
             <img
                 className={s.fourthImg}
-                src={Movies}
+                src={N2uitive}
                 alt='Fourth Project'
-                onClick={() => { window.open('https://ivealreadyseenit.vercel.app/','_blank')}}
+                onClick={() => { window.open('https://n2uitive.com/','_blank')}}
             />
 
             <VisibilitySensor partialVisibility={true} onChange={onChangeFourth}>
                 <div className={s.fourthTitleContainer} style={{transform: visible.fourth ? 'scale(1)' : 'scale(1,.1)'}}>
-                    <h4 translate="no" className={ visible.fourth ? s.fourthTitle2 : s.fourthTitle1} style={{opacity: visible.fourth ? '1' : '0'}} >I've Already<br/>Seen It</h4>
+                    <h4 translate="no" className={ visible.fourth ? s.fourthTitle2 : s.fourthTitle1} style={{opacity: visible.fourth ? '1' : '0'}} >N2uitive</h4>
                 </div>
             </VisibilitySensor>
 
             <img
                 className={s.fifthImg}
-                src={Aramis}
+                src={Poke}
                 alt='Fifth Project'
-                onClick={() => { window.open('https://libreriaaramis.vercel.app/','_blank')}}
+                onClick={() => { window.open('https://post-modern-pokedex.vercel.app/','_blank')}}
             />
 
             <VisibilitySensor partialVisibility={true} onChange={onChangeFifth}>
                 <div className={s.fifthTitleContainer} style={{transform: visible.fifth ? 'scale(1)' : 'scale(1,.1)'}}>
-                    <h4 translate="no" className={ visible.fifth ? s.fifthTitle2 : s.fifthTitle1} style={{opacity: visible.fifth ? '1' : '0'}} >Libreria<br/>Aramis</h4>
+                    <h4 translate="no" className={ visible.fifth ? s.fifthTitle2 : s.fifthTitle1} style={{opacity: visible.fifth ? '1' : '0'}} >Post-Modern<br/>Pokedex</h4>
                 </div>
             </VisibilitySensor>
 
